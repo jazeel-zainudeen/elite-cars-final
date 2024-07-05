@@ -59,7 +59,7 @@ const Brands = () => {
             <div className="absolute top-0 left-0 w-full h-full bg-black/70"></div>
             <div className="flex items-start gap-12 flex-col md:w-2/3 md:pt-0 pt-16">
                 <div className="font-bold md:text-5xl text-4xl head-1">OUR BRANDS</div>
-                <p className="text-xs md:text-base description-1">Our portfolio showcases a diverse range of projects in different scales and styles, reflecting our commitment to excellence and innovation in design. With a team of experienced architects, designers and engineers, ELITE GROUP provides end-to-end solutions that change people's life.</p>
+                <p className="text-xs md:text-lg description-1 text-[#B3B3B3]">Our portfolio showcases a diverse range of projects in different scales and styles, reflecting our commitment to excellence and innovation in design. With a team of experienced architects, designers and engineers, ELITE GROUP provides end-to-end solutions that change people's life.</p>
                 {isMobile ? (
                     <Marquee className='gap-5 pb-16 brands'>
                         {images.map((img, index) => (
@@ -67,9 +67,9 @@ const Brands = () => {
                         ))}
                     </Marquee>
                 ) : (
-                    <div className="flex justify-between md:flex-wrap md:my-0 my-16 gap-10 max-md:overflow-hidden max-md:whitespace-nowrap max-md:animate-[marquee_8s_linear_infinite] brands">
+                    <div className="flex justify-evenly md:flex-wrap md:my-0 my-16 gap-10 max-md:overflow-hidden max-md:whitespace-nowrap max-md:animate-[marquee_8s_linear_infinite] brands">
                         {images.map((img, index) => (
-                            <img key={index} src={img} className="h-6 opacity-75" alt="" />
+                            <img key={index} src={img} className="w-24 h-6 object-contain opacity-75" alt="" />
                         ))}
                     </div>
                 )}

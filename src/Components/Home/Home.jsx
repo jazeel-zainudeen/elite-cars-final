@@ -18,7 +18,6 @@ import CarouselSection2 from "./CarouselSection2";
 import AboutImage from '../../assets/AboutImgMob.png';
 import Img2 from "../../assets/29522fdb562ad5091f7ba8046a52297b.png";
 import Img3 from "../../assets/61eb2205573fced65146611241f3b4c4.jpeg";
-import CareerImg from "../../assets/b1d4e88e46f820c7640c4d2b42e3a3aa.png";
 import Carousel3Img2 from "../../assets/220c8c6b943f41d253ab5e853e6103b7.png";
 import Carousel3Img3 from "../../assets/897d556a59733e5e2482f1b030c8c4de.png";
 import Carousel3Img1 from "../../assets/8feed4b5e6b4f73a93ac24feb4a0ddc6.png";
@@ -56,7 +55,7 @@ const Home = () => {
   const videoRef = useRef(null);
   const [progress, setProgress] = useState(0);
   const videoUrls = [
-    video2,
+    'https://tec-prod-bucket.s3.me-south-1.amazonaws.com/epublic/2kGlRV2Dpux0RDnBHIZ6Bshag0Z06p3DXqs7WqjK.mp4',
     video3,
     video2,
     video3,
@@ -182,12 +181,13 @@ const Home = () => {
             ref={videoRef}
             autoPlay
             muted
+            playsInline
             className="absolute inset-0 top-0 w-screen h-full object-cover video-banner"
             onEnded={handleVideoEnd}
           >
             <source
-              className=""
-              src={videoUrls[currentVideo]} type="video/mp4"
+              src={videoUrls[currentVideo]}
+              type="video/mp4"
             />
             Your browser does not support the video tag.
           </video>
@@ -225,7 +225,7 @@ const Home = () => {
       <div className="px-[3%] section-2">
         <div className="my-10 sm:flex sm:flex-row-reverse sm:items-center">
           <div className="xl:px-24 sm:shrink-1 sm:w-1/2">
-            <div className="text-xl sm:text-4xl lg:text-5xl font-extrabold mb-4 text-1">ABOUT US</div>
+            <div className="text-xl sm:text-4xl lg:text-5xl font-extrabold mb-4 md:mb-6 text-1">ABOUT US</div>
             <p className="mb-4 text-[#404040] text-xs md:text-base text-2">
               Elite Group Holding Ltd, is more than just a group holding company. We are visionaries, innovators and creators of tomorrow’s possibilities.
             </p>
@@ -233,7 +233,7 @@ const Home = () => {
               We believe in the power of purpose-driven business. Our commitment revolves around enhancing the quality of life within the communities we serve and continuously seeking new avenues for fostering growth.
             </p>
 
-            <button className="hidden md:block bg-black hover:bg-white text-white hover:text-black transition-all border border-1 border-black rounded-full px-10 py-3 button-1">
+            <button className="hidden md:block mt-8 bg-black hover:bg-white text-white hover:text-black transition-all border border-1 border-black rounded-full px-10 py-3 button-1">
               Read More
               <ArrowLongRightIcon className="ms-4 inline w-6 h-6" />
             </button>
@@ -245,10 +245,10 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="px-[3%] text-xl sm:text-4xl lg:text-5xl font-extrabold mb-4 section-3-head">EXPLORE OUR SECTORS</div>
+      <div className="px-[3%] text-xl sm:text-4xl lg:text-6xl font-extrabold md:mb-8 mb-4 section-3-head md:mt-20">EXPLORE OUR SECTORS</div>
       <CarouselSection images={CarouselImage2} />
 
-      <div className=" px-[3%] md:my-0 my-10 section-4">
+      <div className=" px-[3%] md:py-0 py-10 section-4 bg-[#F7F7F7] md:pb-12 pb-4">
         <div className="md:grid md:grid-cols-3 flex flex-col md:items-center gap-5 md:gap-[5%] md:p-[5%] mb-4">
           <div className="text-xl sm:text-4xl lg:text-5xl font-extrabold head-1">HIGHLIGHTS</div>
           <div className="flex items-start flex-col md:flex-row md:col-span-2 gap-5 md:gap-10">
@@ -305,8 +305,8 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="section-5">
-        <div className="px-[3%] text-xl sm:text-4xl lg:text-5xl font-extrabold md:mt-24 mb-4 head-1">EXPLORE OUR PARTNERS</div>
+      <div className="section-5 max-md:mt-8">
+        <div className="px-[3%] text-xl sm:text-4xl lg:text-6xl font-extrabold md:mt-20 md:mb-16 mb-6 head-1">EXPLORE OUR PARTNERS</div>
         <CarouselSection images={CarouselImage1} />
       </div>
 

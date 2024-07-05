@@ -126,7 +126,7 @@ const CarouselSection = ({ images }) => {
             ref={(el) => (descriptionRefs.current[index] = el)}
           >
             <div className="md:absolute md:w-full bottom-[20%] transition-all duration-300 ease-in-out transform">
-              <div className={`text-center text-xs md:text-xl lg:text-2xl transition-all text-black md:text-[#DFDCDC] max-md:group-hover:text-white`}>
+              <div className={`select-none text-center text-xs md:text-xl lg:text-2xl transition-all text-black md:text-[#DFDCDC] max-md:group-hover:text-white`}>
                 {image.name}
               </div>
               <div className={`max-md:hidden text-center text-xs md:px-3 md:text-sm lg:text-md text-black md:text-[#DFDCDC] overflow-hidden opacity-0 md:group-hover:opacity-100 transition-all duration-700 cursor-pointer`}>
