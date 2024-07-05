@@ -260,7 +260,7 @@ const Home = () => {
         <div className="grid grid-cols-2 md:grid-cols-4 max-md:gap-5 mb-10 count">
           <div className="grid md:place-content-end place-content-center max-md:aspect-square md:text-right text-center gap-1 sm:gap-2 pt-2 md:pt-10 pb-5 md:px-10 px-2 max-md:border md:border-l border-black relative md:after:w-[80%] md:after:h-0.5 md:after:left-1/2 md:after:-translate-x-1/2 md:after:bg-black md:after:absolute md:after:-bottom-2">
             <div className="text-xl sm:text-4xl lg:text-6xl font-light">
-              <CountUp end={30} redraw={true} delay={2}>
+              <CountUp end={30} redraw={true} delay={1.5}>
                 {({ countUpRef, start }) => (
                   <VisibilitySensor onChange={start} delayedCall>
                     <span ref={countUpRef} />
@@ -271,7 +271,7 @@ const Home = () => {
           </div>
           <div className="grid md:place-content-end place-content-center max-md:aspect-square md:text-right text-center gap-1 sm:gap-2 pt-2 md:pt-10 pb-5 md:px-10 px-2 max-md:border md:border-l border-black relative md:after:w-[80%] md:after:h-0.5 md:after:left-1/2 md:after:-translate-x-1/2 md:after:bg-black md:after:absolute md:after:-bottom-2">
             <div className="text-xl sm:text-4xl lg:text-6xl font-light">
-              <CountUp end={5000} redraw={true} delay={2}>
+              <CountUp end={5000} redraw={true} delay={1.5}>
                 {({ countUpRef, start }) => (
                   <VisibilitySensor onChange={start} delayedCall>
                     <span ref={countUpRef} />
@@ -282,7 +282,7 @@ const Home = () => {
           </div>
           <div className="grid md:place-content-end place-content-center max-md:aspect-square md:text-right text-center gap-1 sm:gap-2 pt-2 md:pt-10 pb-5 md:px-10 px-2 max-md:border md:border-l border-black relative md:after:w-[80%] md:after:h-0.5 md:after:left-1/2 md:after:-translate-x-1/2 md:after:bg-black md:after:absolute md:after:-bottom-2">
             <div className="text-xl sm:text-4xl lg:text-6xl font-light">
-              <CountUp end={40} redraw={true} delay={2}>
+              <CountUp end={40} redraw={true} delay={1.5}>
                 {({ countUpRef, start }) => (
                   <VisibilitySensor onChange={start} delayedCall>
                     <span ref={countUpRef} />
