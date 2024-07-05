@@ -26,20 +26,18 @@ import Carousel3Img4 from "../../assets/ebaac82941ffdd8e43e3861aeb9a9ef3.png";
 gsap.registerPlugin(ScrollTrigger);
 
 const CarouselImage1 = [
-  { src: Img3, name: 'LAMBORGHINI', description: 'Description for Lamborghini' },
-  { src: Img2, name: 'ZENVO AUTOMOBILE', description: 'Description for Zenvo Automobile' },
-  { src: Img3, name: 'JETOUR', description: 'Description for Jetour' },
-  { src: Img2, name: 'THE ELITE CARS', description: 'Description for The Elite Cars' },
-  { src: Img3, name: 'SUN CITY MOTORS', description: 'Description for Sun City Motors' },
+  { src: Img3, name: 'JETOUR', description: 'Jetour has exclusively partnered with The Elite Cars International to bring the Jetour brand to the UAE. This exclusive partnership brings decades of combined formidable experience in the automotive industry, committed to deliver exceptional vehicles at very competitive prices, and professional after sales service, ensuring complete peace of mind to our customers in the UAE' },
+  { src: Img2, name: 'ZENVO AUTOMOBILE', description: 'Zenvo Automotive is a producer of limited-edition hypercars based in Præstø, Denmark. Founded in 2007, Zenvo was started with the aim of combining the latest technologies and innovation with an analogue feel, offering the driver a true connection and astonishing performance.' },
+  { src: Img3, name: 'LYNK & CO', description: 'LYNK & CO is well-known for its cutting-edge technology, Mega-City Contrast design philosophy, and commitment to redefining the automotive industry. It is a joint-venture brand co-founded by Geely and Volvo, positioning the global new premium market. By joining forces with this dynamic brand, we are poised to transform the driving experience for our customers and solidify our position as a leader in the market.' },
+  { src: Img2, name: 'THE ELITE CARS', description: 'The Elite Cars, is a subsidiary of Elite Group Holding, automotive division, specializing in high-end to mid-luxury car brands.​With a commitment to quality, service, and customer satisfaction, The Elite Cars has been the undisputed leader in the UAE luxury automotive industry for decades.' },
 ];
 
 const CarouselImage2 = [
-  { src: Img2, name: 'AUTOMOTIVE', description: 'Ultimate Motors upholds its dedication to delivering unrivaled excellence in customer experience and top-tier automotive services.' },
-  { src: Img3, name: 'INVESTMENT', description: 'Ultimate Motors upholds its dedication to delivering unrivaled excellence in customer experience and top-tier automotive services.' },
-  { src: Img2, name: 'REAL ESTATE', description: 'Ultimate Motors upholds its dedication to delivering unrivaled excellence in customer experience and top-tier automotive services.' },
-  { src: Img3, name: 'HEALTHCARE', description: 'Ultimate Motors upholds its dedication to delivering unrivaled excellence in customer experience and top-tier automotive services.' },
-  { src: Img2, name: 'EDUCATION', description: 'Ultimate Motors upholds its dedication to delivering unrivaled excellence in customer experience and top-tier automotive services.' },
-  { src: Img2, name: 'ECOMMERCE', description: 'Ultimate Motors upholds its dedication to delivering unrivaled excellence in customer experience and top-tier automotive services.' },
+  { src: Img2, name: 'AUTOMOTIVE', description: 'Our automotive division is a key player in the UAE\'s robust automotive market, offering a comprehensive range of services from vehicle sales and leasing to maintenance and after-sales support. We partner with leading global brands to bring the latest and most reliable vehicles to our customers.' },
+  { src: Img2, name: 'E-COMMERCE', description: 'We are at the forefront of the digital revolution, providing seamless online shopping experiences through our cutting-edge e-commerce platforms. Our goal is to make shopping convenient, efficient, and enjoyable, catering to the evolving needs of modern consumers. ' },
+  { src: Img3, name: 'HEALTHCARE', description: 'Elite Group Holding  is dedicated to enhancing the well-being of the community through state-of-the-art medical facilities, innovative health services, and patient-centric care. We strive to make high-quality healthcare accessible to all, backed by a team of experienced professionals.' },
+  { src: Img2, name: 'REAL ESTATE AND CONTRACTING', description: 'Our real estate and contracting division is synonymous with luxury, quality, and innovation. We develop, manage, and invest in a diverse portfolio of residential, commercial, and mixed-use properties, setting new benchmarks in the real estate industry. ' },
+  { src: Img3, name: 'INVESTMENT', description: 'Our investments arm is instrumental in the development and implementation of various projects and businesses that drive economic growth. We are involved in a wide range of projects, from construction to strategic investments, ensuring long-term value creation and sustainability.' },
 ];
 
 const CarouselImage3 = [
@@ -192,12 +190,12 @@ const Home = () => {
             Your browser does not support the video tag.
           </video>
 
-          <div className="absolute w-full h-full bg-[linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.8))]"></div>
+          <div className="absolute w-full h-full bg-[linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.9))]"></div>
 
           <div className="absolute top-1/2 left-[3%] -translate-y-1/2 z-10">
             <div className="text-lg md:text-xl font-medium mb-4 text-1">WELCOME TO ELITE GROUP HOLDINGS</div>
-            <div className="text-4xl lg:text-6xl font-bold mb-5 text-2">DRIVING EXCELLENCE<br />BUILDING FUTURES</div>
-            <button className="hover:bg-white hover:text-black transition-all border border-1 border-white rounded-full px-10 py-3 button-1">
+            <div className="text-4xl lg:text-6xl font-bold mb-5 text-2">DRIVING <span className="text-[#fb511e]">EXCELLENCE</span><br />BUILDING <span className="text-[#fb511e]">FUTURES</span></div>
+            <button className="hover:bg-[#fb511e] transition-all border border-1 border-white hover:border-[#fb511e] rounded-full px-10 py-3 button-1">
               Explore
               <ArrowLongRightIcon className="ms-4 inline w-6 h-6" />
             </button>
@@ -206,13 +204,13 @@ const Home = () => {
           <div className="absolute bottom-[10%] w-screen grid grid-rows-1 grid-flow-col gap-[3%] px-[3%] overflow-x-auto whitespace-nowrap">
             {["Our Company", "Automotive", "Investments", "Real-Estate", "Healthcare", "Education", "Ecommerce"].map((item, index) => (
               <div key={index} onClick={() => handleVideoClick(index)} className={`cursor-pointer  ${currentVideo == index ? 'max-md:block' : 'max-md:hidden'}`}>
-                <div className="pb-1 text-white">
-                  <div className="text-xl mb-2">{item}</div>
+                <div className="pb-1">
+                  <div className="text-xl mb-2 text-[#d7dcd7]">{item}</div>
                   <div className="flex items-center justify-between  w-full">
                     {/* Progress Bar */}
                     <div className="w-full bg-[#ffffff33] h-[2px]">
                       {currentVideo == index &&
-                        <div className="bg-white h-[2px]" style={{ width: `${progress}%` }}></div>
+                        <div className="bg-[#d7dcd7] h-[2px]" style={{ width: `${progress}%` }}></div>
                       }
                     </div>
                   </div>
@@ -225,15 +223,18 @@ const Home = () => {
       <div className="px-[3%] section-2">
         <div className="my-10 sm:flex sm:flex-row-reverse sm:items-center">
           <div className="xl:px-24 sm:shrink-1 sm:w-1/2">
-            <div className="text-xl sm:text-4xl lg:text-5xl font-extrabold mb-4 md:mb-6 text-1">ABOUT US</div>
-            <p className="mb-4 text-[#404040] text-xs md:text-base text-2">
-              Elite Group Holding Ltd, is more than just a group holding company. We are visionaries, innovators and creators of tomorrow’s possibilities.
+            <div className="text-xl sm:text-4xl lg:text-6xl text-[#282828] font-extrabold mb-4 md:mb-8 text-1">ABOUT US</div>
+            <p className="mb-4 text-[#808080] text-xs md:text-lg text-2">
+              At Elite Group Holding, we are committed to enhance the QUALITY OF LIFE within the communities we serve, continuously seek avenues for fostering growth and make a positive impact on the world and our community.
             </p>
-            <p className="mb-4 text-[#404040] text-xs md:text-base text-2">
-              We believe in the power of purpose-driven business. Our commitment revolves around enhancing the quality of life within the communities we serve and continuously seeking new avenues for fostering growth.
+            <p className="mb-4 text-[#808080] text-xs md:text-lg text-2">
+              Headquartered in the United Arab Emirates, our expansive portfolio encompasses automotive, e-commerce, healthcare, real estate and contracting, and investments.
+            </p>
+            <p className="mb-4 text-[#808080] text-xs md:text-lg text-2">
+              We pride ourselves on our unwavering dedication to excellence, integrity, and teamwork.
             </p>
 
-            <button className="hidden md:block mt-8 bg-black hover:bg-white text-white hover:text-black transition-all border border-1 border-black rounded-full px-10 py-3 button-1">
+            <button className="hidden md:block mt-9 bg-black hover:bg-[#fb511e] text-white transition-all border border-1 border-black hover:border-[#fb511e] rounded-full px-10 py-3 button-1">
               Read More
               <ArrowLongRightIcon className="ms-4 inline w-6 h-6" />
             </button>
@@ -249,17 +250,18 @@ const Home = () => {
       <CarouselSection images={CarouselImage2} />
 
       <div className=" px-[3%] md:py-0 py-10 section-4 bg-[#F7F7F7] md:pb-12 pb-4">
-        <div className="md:grid md:grid-cols-3 flex flex-col md:items-center gap-5 md:gap-[5%] md:p-[5%] mb-4">
-          <div className="text-xl sm:text-4xl lg:text-5xl font-extrabold head-1">HIGHLIGHTS</div>
+        <div className="md:grid md:grid-cols-3 flex flex-col md:items-center gap-5 md:gap-[5%] md:py-[5%] mb-4">
+          <div className="text-xl sm:text-4xl lg:text-6xl font-extrabold head-1 text-[#282828]">HIGHLIGHTS</div>
           <div className="flex items-start flex-col md:flex-row md:col-span-2 gap-5 md:gap-10">
-            <p className="font-light md:text-base text-xs text md:w-1/2">We are pragmatic in our approach to design and handle each project in accordance with its particular set of requirements and imperatives. When working in conservation areas or on listed buildings we aim to respect and retain v best of the historic elements and to supplement these with contemporary interventions wherever appropriate.</p>
-            <p className="font-light md:text-base text-xs text md:w-1/2">Energy efficiency and sustainability issues are given serious consideration at the outset of the design process, in particular on new-build projects. Properly considered they play an important part in adding present and future value.</p>
+            <p className="font-light text-[#808080] md:text-lg text-xs text md:w-1/2">Trust and integrity are our core currencies, it is a foundation on how we build trust with our stakeholders and our partners.</p>
+            <p className="font-light text-[#808080] md:text-lg text-xs text md:w-1/2">We hold ourselves to the highest ethical standards, ensuring transparency, honesty and accountability in everything we do.</p>
+            <p className="font-light text-[#808080] md:text-lg text-xs text md:w-1/2">We believe in creating lasting value for our stakeholders. Our diversified portfolio, strategic vision, and operational excellence drive our success and ensure we remain a trusted partner in every sector we operate.</p>
           </div>
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-4 max-md:gap-5 mb-10 count">
-          <div className="grid md:place-content-end place-content-center max-md:aspect-square md:text-right text-center gap-1 sm:gap-2 pt-2 md:pt-10 pb-5 md:px-10 px-2 max-md:border md:border-l border-black relative md:after:w-[80%] md:after:h-0.5 md:after:left-1/2 md:after:-translate-x-1/2 md:after:bg-black md:after:absolute md:after:-bottom-2">
-            <div className="text-xl sm:text-4xl lg:text-6xl font-light">
+          <div className="grid md:place-content-end place-content-center max-md:aspect-square md:text-right text-center gap-1 sm:gap-2 pt-2 md:pt-10 pb-5 md:px-10 px-2 max-md:border md:border-l-2 border-[#808080] relative md:after:w-[80%] md:after:h-0.5 md:after:left-1/2 md:after:-translate-x-1/2 md:after:bg-[#808080] md:after:absolute md:after:-bottom-2">
+            <div className="text-xl sm:text-4xl lg:text-7xl font-bold">
               <CountUp end={30} redraw={true} delay={1.5}>
                 {({ countUpRef, start }) => (
                   <VisibilitySensor onChange={start} delayedCall>
@@ -267,10 +269,10 @@ const Home = () => {
                   </VisibilitySensor>
                 )}
               </CountUp>+</div>
-            <div className="max-md:text-black/40 text-xs">Years of experience</div>
+            <div className="max-md:text-[#282828] text-xs md:text-sm">Years of experience</div>
           </div>
-          <div className="grid md:place-content-end place-content-center max-md:aspect-square md:text-right text-center gap-1 sm:gap-2 pt-2 md:pt-10 pb-5 md:px-10 px-2 max-md:border md:border-l border-black relative md:after:w-[80%] md:after:h-0.5 md:after:left-1/2 md:after:-translate-x-1/2 md:after:bg-black md:after:absolute md:after:-bottom-2">
-            <div className="text-xl sm:text-4xl lg:text-6xl font-light">
+          <div className="grid md:place-content-end place-content-center max-md:aspect-square md:text-right text-center gap-1 sm:gap-2 pt-2 md:pt-10 pb-5 md:px-10 px-2 max-md:border md:border-l-2 border-[#808080] relative md:after:w-[80%] md:after:h-0.5 md:after:left-1/2 md:after:-translate-x-1/2 md:after:bg-[#808080] md:after:absolute md:after:-bottom-2">
+            <div className="text-xl sm:text-4xl lg:text-7xl font-bold">
               <CountUp end={5000} redraw={true} delay={1.5}>
                 {({ countUpRef, start }) => (
                   <VisibilitySensor onChange={start} delayedCall>
@@ -278,10 +280,10 @@ const Home = () => {
                   </VisibilitySensor>
                 )}
               </CountUp>+</div>
-            <div className="max-md:text-black/40 text-xs">Employers</div>
+            <div className="max-md:text-[#282828] text-xs md:text-sm">Employers</div>
           </div>
-          <div className="grid md:place-content-end place-content-center max-md:aspect-square md:text-right text-center gap-1 sm:gap-2 pt-2 md:pt-10 pb-5 md:px-10 px-2 max-md:border md:border-l border-black relative md:after:w-[80%] md:after:h-0.5 md:after:left-1/2 md:after:-translate-x-1/2 md:after:bg-black md:after:absolute md:after:-bottom-2">
-            <div className="text-xl sm:text-4xl lg:text-6xl font-light">
+          <div className="grid md:place-content-end place-content-center max-md:aspect-square md:text-right text-center gap-1 sm:gap-2 pt-2 md:pt-10 pb-5 md:px-10 px-2 max-md:border md:border-l-2 border-[#808080] relative md:after:w-[80%] md:after:h-0.5 md:after:left-1/2 md:after:-translate-x-1/2 md:after:bg-[#808080] md:after:absolute md:after:-bottom-2">
+            <div className="text-xl sm:text-4xl lg:text-7xl font-bold">
               <CountUp end={40} redraw={true} delay={1.5}>
                 {({ countUpRef, start }) => (
                   <VisibilitySensor onChange={start} delayedCall>
@@ -289,10 +291,10 @@ const Home = () => {
                   </VisibilitySensor>
                 )}
               </CountUp>+</div>
-            <div className="max-md:text-black/40 text-xs">Nationalities</div>
+            <div className="max-md:text-[#282828] text-xs md:text-sm">Nationalities</div>
           </div>
-          <div className="grid md:place-content-end place-content-center max-md:aspect-square md:text-right text-center gap-1 sm:gap-2 pt-2 md:pt-10 pb-5 md:px-10 px-2 max-md:border md:border-l md:border-r border-black relative md:after:w-[80%] md:after:h-0.5 md:after:left-1/2 md:after:-translate-x-1/2 md:after:bg-black md:after:absolute md:after:-bottom-2">
-            <div className="text-xl sm:text-4xl lg:text-6xl font-light">
+          <div className="grid md:place-content-end place-content-center max-md:aspect-square md:text-right text-center gap-1 sm:gap-2 pt-2 md:pt-10 pb-5 md:px-10 px-2 max-md:border md:border-l-2 md:border-r-2 border-[#808080] relative md:after:w-[80%] md:after:h-0.5 md:after:left-1/2 md:after:-translate-x-1/2 md:after:bg-[#808080] md:after:absolute md:after:-bottom-2">
+            <div className="text-xl sm:text-4xl lg:text-7xl font-bold">
               <CountUp end={20} redraw={true} delay={1.5}>
                 {({ countUpRef, start }) => (
                   <VisibilitySensor onChange={start} delayedCall>
@@ -300,7 +302,7 @@ const Home = () => {
                   </VisibilitySensor>
                 )}
               </CountUp>+</div>
-            <div className="max-md:text-black/40 text-xs">Offices / Showrooms</div>
+            <div className="max-md:text-[#282828] text-xs md:text-sm">Offices / Showrooms</div>
           </div>
         </div>
       </div>
@@ -310,8 +312,8 @@ const Home = () => {
         <CarouselSection images={CarouselImage1} />
       </div>
 
-      <div className="px-[3%] md:px-[12%] mx-auto md:mt-24 my-10 section-6">
-        <div className="text-xl sm:text-4xl lg:text-5xl font-extrabold mb-5">LAMBORGHINI WORLD</div>
+      <div className="px-[3%] mx-auto md:mt-24 my-10 section-6">
+        <div className="text-xl sm:text-4xl lg:text-6xl text-[#282828] font-extrabold mb-5">LAMBORGHINI WORLD</div>
         <CarouselSection2 images={CarouselImage3} />
       </div>
 

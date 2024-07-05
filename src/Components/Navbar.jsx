@@ -6,7 +6,7 @@ import SocialLinks from './SocialLinks';
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
-  const [activeSection, setActiveSection] = useState(null);
+  const [activeSection, setActiveSection] = useState('automotive');
 
   useEffect(() => {
     if (showMenu) {
@@ -22,18 +22,23 @@ const Navbar = () => {
 
   return (
     <>
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 z-[60] py-4">
+        <a href="/" className=''><img src={Logo} className='md:w-40' /></a>
+      </div>
       <div className='fixed z-50 w-screen'>
         <div className="flex justify-between px-[2.5%] py-4 bg-[linear-gradient(rgba(15,15,15,0.7),rgba(0,0,0,0))]">
-          <SocialLinks className='gap-2 hidden md:flex items-center' />
-          <a href="/" className='mr-0 md:mr-8'><img src={Logo} /></a>
+          <SocialLinks className='gap-0.5 hidden md:flex items-center' iconClassName='w-6 h-6' />
           <div className='flex items-center gap-8'>
-            <a href='/contact-us' className='text-white text-lg hidden md:flex'>CONTACT</a>
-            <Hamburger toggled={showMenu} toggle={setShowMenu} color="white" />
+            <a href='/contact-us' className='text-[#d7dcd7] hover:text-[#fb511e] text-lg hidden md:flex'>CONTACT</a>
+
+            <div className="hamburger-wrapper">
+              <Hamburger toggled={showMenu} toggle={setShowMenu} color="#d7dcd7" />
+            </div>
           </div>
         </div>
       </div>
-      <div className={`menu w-screen md:h-screen h-full max-md:min-h-screen max-md:pt-[20vh] max-md:pb-6 max-md:overflow-scroll fixed z-40 backdrop-blur-lg backdrop-brightness-50 transition-all duration-1000 ease-in-out ${showMenu ? 'bottom-0' : 'bottom-full'}`}>
-        <div onMouseLeave={() => handleHover(null)} className="flex md:justify-evenly max-md:flex-col max-md:gap-10 md:h-screen w-screen items-start md:items-center max-md:px-[3%] text-sm sm:text-lg md:text-3xl">
+      <div className={`menu w-screen h-auto max-md:pt-[20vh] max-md:pb-6 max-md:overflow-scroll fixed z-40 backdrop-blur-lg backdrop-brightness-50 transition-all duration-1000 ease-in-out bg-[#282828] ${showMenu ? 'opacity-full top-0' : 'opacity-0 -top-full'}`}>
+        <div onMouseLeave={() => handleHover(null)} className="flex md:justify-evenly max-md:flex-col max-md:gap-10 w-screen items-start md:items-center max-md:px-[3%] md:py-[6%] text-sm sm:text-lg md:text-3xl">
           <div>
             <div className="flex flex-col items-start h-full gap-3 md:gap-7">
               <div className="text-[#989898] font-light whitespace-nowrap">NAVIGATION</div>
