@@ -224,13 +224,13 @@ const Home = () => {
         <div className="my-10 sm:flex sm:flex-row-reverse sm:items-center">
           <div className="xl:px-24 sm:shrink-1 sm:w-1/2">
             <div className="text-xl sm:text-4xl lg:text-6xl text-[#282828] font-extrabold mb-4 md:mb-8 text-1">ABOUT US</div>
-            <p className="mb-4 text-[#808080] text-xs md:text-lg text-2">
+            <p className="mb-4 text-[#808080] text-xs md:text-base text-2">
               At Elite Group Holding, we are committed to enhance the QUALITY OF LIFE within the communities we serve, continuously seek avenues for fostering growth and make a positive impact on the world and our community.
             </p>
-            <p className="mb-4 text-[#808080] text-xs md:text-lg text-2">
+            <p className="mb-4 text-[#808080] text-xs md:text-base text-2">
               Headquartered in the United Arab Emirates, our expansive portfolio encompasses automotive, e-commerce, healthcare, real estate and contracting, and investments.
             </p>
-            <p className="mb-4 text-[#808080] text-xs md:text-lg text-2">
+            <p className="mb-4 text-[#808080] text-xs md:text-base text-2">
               We pride ourselves on our unwavering dedication to excellence, integrity, and teamwork.
             </p>
 
