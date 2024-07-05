@@ -1,6 +1,8 @@
 import React, { useEffect, useRef, useState } from "react";
 
 import gsap from 'gsap';
+import CountUp from "react-countup";
+import VisibilitySensor from 'react-visibility-sensor';
 
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { ArrowLongRightIcon } from "@heroicons/react/24/outline";
@@ -33,12 +35,12 @@ const CarouselImage1 = [
 ];
 
 const CarouselImage2 = [
-  { src: Img2, name: 'AUTOMOTIVE', description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, sint.' },
-  { src: Img3, name: 'INVESTMENT', description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, sint.' },
-  { src: Img2, name: 'REAL ESTATE', description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, sint.' },
-  { src: Img3, name: 'HEALTHCARE', description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, sint.' },
-  { src: Img2, name: 'EDUCATION', description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, sint.' },
-  { src: Img2, name: 'ECOMMERCE', description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, sint.' },
+  { src: Img2, name: 'AUTOMOTIVE', description: 'Ultimate Motors upholds its dedication to delivering unrivaled excellence in customer experience and top-tier automotive services.' },
+  { src: Img3, name: 'INVESTMENT', description: 'Ultimate Motors upholds its dedication to delivering unrivaled excellence in customer experience and top-tier automotive services.' },
+  { src: Img2, name: 'REAL ESTATE', description: 'Ultimate Motors upholds its dedication to delivering unrivaled excellence in customer experience and top-tier automotive services.' },
+  { src: Img3, name: 'HEALTHCARE', description: 'Ultimate Motors upholds its dedication to delivering unrivaled excellence in customer experience and top-tier automotive services.' },
+  { src: Img2, name: 'EDUCATION', description: 'Ultimate Motors upholds its dedication to delivering unrivaled excellence in customer experience and top-tier automotive services.' },
+  { src: Img2, name: 'ECOMMERCE', description: 'Ultimate Motors upholds its dedication to delivering unrivaled excellence in customer experience and top-tier automotive services.' },
 ];
 
 const CarouselImage3 = [
@@ -224,10 +226,10 @@ const Home = () => {
         <div className="my-10 sm:flex sm:flex-row-reverse sm:items-center">
           <div className="xl:px-24 sm:shrink-1 sm:w-1/2">
             <div className="text-xl sm:text-4xl lg:text-5xl font-extrabold mb-4 text-1">ABOUT US</div>
-            <p className="mb-4 text-[#404040] text-xs md:text-sm text-2">
+            <p className="mb-4 text-[#404040] text-xs md:text-base text-2">
               Elite Group Holding Ltd, is more than just a group holding company. We are visionaries, innovators and creators of tomorrow’s possibilities.
             </p>
-            <p className="mb-4 text-[#404040] text-xs md:text-sm text-2">
+            <p className="mb-4 text-[#404040] text-xs md:text-base text-2">
               We believe in the power of purpose-driven business. Our commitment revolves around enhancing the quality of life within the communities we serve and continuously seeking new avenues for fostering growth.
             </p>
 
@@ -250,27 +252,55 @@ const Home = () => {
         <div className="md:grid md:grid-cols-3 flex flex-col md:items-center gap-5 md:gap-[5%] md:p-[5%] mb-4">
           <div className="text-xl sm:text-4xl lg:text-5xl font-extrabold head-1">HIGHLIGHTS</div>
           <div className="flex items-start flex-col md:flex-row md:col-span-2 gap-5 md:gap-10">
-            <p className="font-light md:text-sm text-xs text">We are pragmatic in our approach to design and handle each project in accordance with its particular set of requirements and imperatives. When working in conservation areas or on listed buildings we aim to respect and retain v best of the historic elements and to supplement these with contemporary interventions wherever appropriate.</p>
-            <p className="font-light md:text-sm text-xs text">Energy efficiency and sustainability issues are given serious consideration at the outset of the design process, in particular on new-build projects. Properly considered they play an important part in adding present and future value.</p>
+            <p className="font-light md:text-base text-xs text md:w-1/2">We are pragmatic in our approach to design and handle each project in accordance with its particular set of requirements and imperatives. When working in conservation areas or on listed buildings we aim to respect and retain v best of the historic elements and to supplement these with contemporary interventions wherever appropriate.</p>
+            <p className="font-light md:text-base text-xs text md:w-1/2">Energy efficiency and sustainability issues are given serious consideration at the outset of the design process, in particular on new-build projects. Properly considered they play an important part in adding present and future value.</p>
           </div>
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-4 max-md:gap-5 mb-10 count">
-          <div className="grid md:place-content-end place-content-center max-md:aspect-square max-md:bg-black md:text-right text-center gap-1 sm:gap-2 pt-2 md:pt-10 pb-5 md:px-10 px-2 md:border-l border-black relative md:after:w-[80%] md:after:h-0.5 md:after:left-1/2 md:after:-translate-x-1/2 md:after:bg-black md:after:absolute md:after:-bottom-2">
-            <div className="max-md:text-white text-xl sm:text-4xl lg:text-6xl">30+</div>
-            <div className="max-md:text-[#D4D4D4] text-xs">Years of experience</div>
+          <div className="grid md:place-content-end place-content-center max-md:aspect-square md:text-right text-center gap-1 sm:gap-2 pt-2 md:pt-10 pb-5 md:px-10 px-2 max-md:border md:border-l border-black relative md:after:w-[80%] md:after:h-0.5 md:after:left-1/2 md:after:-translate-x-1/2 md:after:bg-black md:after:absolute md:after:-bottom-2">
+            <div className="text-xl sm:text-4xl lg:text-6xl font-light">
+              <CountUp end={30} redraw={true} delay={2}>
+                {({ countUpRef, start }) => (
+                  <VisibilitySensor onChange={start} delayedCall>
+                    <span ref={countUpRef} />
+                  </VisibilitySensor>
+                )}
+              </CountUp>+</div>
+            <div className="max-md:text-black/40 text-xs">Years of experience</div>
           </div>
-          <div className="grid md:place-content-end place-content-center max-md:aspect-square max-md:bg-black md:text-right text-center gap-1 sm:gap-2 pt-2 md:pt-10 pb-5 md:px-10 px-2 md:border-l border-black relative md:after:w-[80%] md:after:h-0.5 md:after:left-1/2 md:after:-translate-x-1/2 md:after:bg-black md:after:absolute md:after:-bottom-2">
-            <div className="max-md:text-white text-xl sm:text-4xl lg:text-6xl">5000+</div>
-            <div className="max-md:text-[#D4D4D4] text-xs">Employers</div>
+          <div className="grid md:place-content-end place-content-center max-md:aspect-square md:text-right text-center gap-1 sm:gap-2 pt-2 md:pt-10 pb-5 md:px-10 px-2 max-md:border md:border-l border-black relative md:after:w-[80%] md:after:h-0.5 md:after:left-1/2 md:after:-translate-x-1/2 md:after:bg-black md:after:absolute md:after:-bottom-2">
+            <div className="text-xl sm:text-4xl lg:text-6xl font-light">
+              <CountUp end={5000} redraw={true} delay={2}>
+                {({ countUpRef, start }) => (
+                  <VisibilitySensor onChange={start} delayedCall>
+                    <span ref={countUpRef} />
+                  </VisibilitySensor>
+                )}
+              </CountUp>+</div>
+            <div className="max-md:text-black/40 text-xs">Employers</div>
           </div>
-          <div className="grid md:place-content-end place-content-center max-md:aspect-square max-md:bg-black md:text-right text-center gap-1 sm:gap-2 pt-2 md:pt-10 pb-5 md:px-10 px-2 md:border-l border-black relative md:after:w-[80%] md:after:h-0.5 md:after:left-1/2 md:after:-translate-x-1/2 md:after:bg-black md:after:absolute md:after:-bottom-2">
-            <div className="max-md:text-white text-xl sm:text-4xl lg:text-6xl">40+</div>
-            <div className="max-md:text-[#D4D4D4] text-xs">Nationalities</div>
+          <div className="grid md:place-content-end place-content-center max-md:aspect-square md:text-right text-center gap-1 sm:gap-2 pt-2 md:pt-10 pb-5 md:px-10 px-2 max-md:border md:border-l border-black relative md:after:w-[80%] md:after:h-0.5 md:after:left-1/2 md:after:-translate-x-1/2 md:after:bg-black md:after:absolute md:after:-bottom-2">
+            <div className="text-xl sm:text-4xl lg:text-6xl font-light">
+              <CountUp end={40} redraw={true} delay={2}>
+                {({ countUpRef, start }) => (
+                  <VisibilitySensor onChange={start} delayedCall>
+                    <span ref={countUpRef} />
+                  </VisibilitySensor>
+                )}
+              </CountUp>+</div>
+            <div className="max-md:text-black/40 text-xs">Nationalities</div>
           </div>
-          <div className="grid md:place-content-end place-content-center max-md:aspect-square max-md:bg-black md:text-right text-center gap-1 sm:gap-2 pt-2 md:pt-10 pb-5 md:px-10 px-2 md:border-l md:border-r border-black relative md:after:w-[80%] md:after:h-0.5 md:after:left-1/2 md:after:-translate-x-1/2 md:after:bg-black md:after:absolute md:after:-bottom-2">
-            <div className="max-md:text-white text-xl sm:text-4xl lg:text-6xl">20+</div>
-            <div className="max-md:text-[#D4D4D4] text-xs">Offices / Showrooms</div>
+          <div className="grid md:place-content-end place-content-center max-md:aspect-square md:text-right text-center gap-1 sm:gap-2 pt-2 md:pt-10 pb-5 md:px-10 px-2 max-md:border md:border-l md:border-r border-black relative md:after:w-[80%] md:after:h-0.5 md:after:left-1/2 md:after:-translate-x-1/2 md:after:bg-black md:after:absolute md:after:-bottom-2">
+            <div className="text-xl sm:text-4xl lg:text-6xl font-light">
+              <CountUp end={20} redraw={true} delay={1.5}>
+                {({ countUpRef, start }) => (
+                  <VisibilitySensor onChange={start} delayedCall>
+                    <span ref={countUpRef} />
+                  </VisibilitySensor>
+                )}
+              </CountUp>+</div>
+            <div className="max-md:text-black/40 text-xs">Offices / Showrooms</div>
           </div>
         </div>
       </div>
