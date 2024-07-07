@@ -11,6 +11,14 @@ import brandImg2 from './../../assets/brands/color/image 44.png';
 import brandImg3 from './../../assets/brands/color/image 46.png';
 import brandImg4 from './../../assets/brands/color/Rectangle 24.png';
 import brandImg5 from './../../assets/brands/color/Rectangle 45.png';
+
+import groupImg1 from './../../assets/group/1.png';
+import groupImg2 from './../../assets/group/2.png';
+import groupImg3 from './../../assets/group/3.png';
+import groupImg4 from './../../assets/group/4.png';
+import groupImg5 from './../../assets/group/5.png';
+import groupImg6 from './../../assets/group/6.png';
+
 import Image1 from "../../assets/a350f6cd3b16d8ad3bc39a824b1e7d82.png";
 import BackgroundImage from "../../assets/57af26e48eb6728309d8a752a133493e.png";
 
@@ -89,13 +97,44 @@ const GroupOfCompanies = () => {
                         <img src={Image1} alt="" className="w-full sm:h-[20rem] md:h-[26rem] object-cover" />
                     </div>
                     <div className="md:px-12 lg:px-20 xl:px-24 sm:shrink-1 sm:w-1/2">
-                        <div className="text-md sm:text-base lg:text-4xl font-semibold mb-2 md:mb-4">JOIN OUR TEAM</div>
+                        <div className="text-md sm:text-base lg:text-4xl font-semibold mb-2 md:mb-4">ELITE INVESTMENT COMPANY</div>
                         <p className="mb-2 md:mb-4 text-[#404040] text-xs lg:text-sm">
-                            Welcome to the pinnacle of automotive excellence. At The Elite Cars, we're not just selling cars, we're delivering dreams. We are one of the leading luxury car dealerships based in The UAE, offering an unparalleled selection of the world's finest luxury automobiles.
+                            Elite Group Holding  is pleased to assist you with an attentive multi-channel service:
+                        </p>
+                        <p className="mb-2 md:mb-8 text-[#404040] text-xs lg:text-sm">
+                            You can ask your questions to the Elite Group Holding  Assistant, who will guide you through the Elite Group Holding.
+                        </p>
+                        <button className="bg-black hover:bg-[#fb511e] text-white transition-all border border-1 border-black hover:border-[#fb511e] rounded-full px-10 py-3 button-1 font-light mb-2 md:mb-8">
+                            Read More
+                            <ArrowLongRightIcon className="ms-4 inline w-6 h-6" />
+                        </button>
+                    </div>
+                </div>
+
+                <div className="flex max-md:flex-col-reverse max-md:gap-3 md:flex-row sm:items-center max-md:my-10">
+                    <div className="relative sm:w-[56%] sm:grow sm:shrink-0 sm:-me-[3.5%] overflow-hidden z-10">
+                        <div className="hidden sm:block absolute bg-white max-md:w-1/3 w-1/4 h-[120%] lg:-rotate-[20deg] md:-rotate-[15deg] -top-16 xl:-right-[14.35%] lg:-right-[11%] md:-right-[11%] sm:-right-[14%] "></div>
+                        <img src={Image1} alt="" className="w-full sm:h-[20rem] md:h-[26rem] object-cover" />
+                    </div>
+                    <div className="md:px-12 lg:px-20 xl:px-24 sm:shrink-1 sm:w-1/2">
+                        <div className="text-md sm:text-base lg:text-4xl font-semibold mb-2 md:mb-4">ELITE AUTOMOBILES</div>
+                        <p className="mb-2 md:mb-4 text-[#404040] text-xs lg:text-sm">
+                            Elite Group Holding  is pleased to assist you with an attentive multi-channel service:
                         </p>
                         <p className="mb-2 md:mb-4 text-[#404040] text-xs lg:text-sm">
-                            But our commitment to excellence extends beyond the showroom floor. We are also dedicated to fostering a world-class work environment for our team members. If you are passionate about the automotive industry, thrive in a fast-paced environment, and are dedicated to exceeding expectations, we invite you to explore career opportunities at The Elite cars
+                            You can ask your questions to the Elite Group Holding  Assistant, who will guide you through the Elite Group Holding.
                         </p>
+                        <button className="bg-black hover:bg-[#fb511e] text-white transition-all border border-1 border-black hover:border-[#fb511e] rounded-full px-10 py-3 button-1 font-light mb-2 md:mb-8">
+                            Read More
+                            <ArrowLongRightIcon className="ms-4 inline w-6 h-6" />
+                        </button>
+                        <Marquee loop={0} className='gap-5 pb-16 overflow-x-visible brands'>
+                            <img src={brandImg1} className="h-8 px-5" alt="" />
+                            <img src={brandImg2} className="h-8 px-5" alt="" />
+                            <img src={brandImg3} className="h-8 px-5" alt="" />
+                            <img src={brandImg4} className="h-8 px-5" alt="" />
+                            <img src={brandImg5} className="h-8 px-5" alt="" />
+                        </Marquee>
                     </div>
                 </div>
             </div>

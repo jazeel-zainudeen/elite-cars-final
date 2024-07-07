@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <div className='bg-[#141414] py-10'>
       <div className="px-[4%] mx-auto">
-        <img src={Logo} className='mx-auto mb-10' />
+        <img src={Logo} className='w-44 mx-auto mb-10' />
 
         <div className="grid md:grid-cols-3 gap-5 text-[#808080]">
           <div>

@@ -10,7 +10,7 @@ import { ArrowLongRightIcon } from "@heroicons/react/24/outline";
 import Brands from "./Brands";
 import Footer from "../Footer";
 import Navbar from "../Navbar";
-import Img1 from "../../assets/Img1.png";
+import video1 from "../../assets/video1.mp4";
 import video2 from "../../assets/video2.mp4";
 import video3 from "../../assets/video3.mp4";
 import CarouselSection from "./CarouselSection";
@@ -48,12 +48,11 @@ const CarouselImage3 = [
 ]
 
 const Home = () => {
-  const [currentBackground, setCurrentBackground] = useState(Img1); // Initial background image
   const [currentVideo, setCurrentVideo] = useState(0);
   const videoRef = useRef(null);
   const [progress, setProgress] = useState(0);
   const videoUrls = [
-    'https://tec-prod-bucket.s3.me-south-1.amazonaws.com/epublic/2kGlRV2Dpux0RDnBHIZ6Bshag0Z06p3DXqs7WqjK.mp4',
+    video1,
     video3,
     video2,
     video3,
@@ -150,10 +149,6 @@ const Home = () => {
       };
     }
   }, [currentVideo]);
-
-  // const handleHover = (image) => {
-  //   setCurrentBackground(image);
-  // };
 
   const handleVideoClick = (index) => {
     setCurrentVideo(index);
