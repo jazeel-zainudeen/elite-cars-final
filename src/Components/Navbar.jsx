@@ -22,13 +22,13 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 z-[60] py-4">
-        <a href="/" className=''><img src={Logo} className='md:w-32' /></a>
+      <div className="absolute top-0 md:left-1/2 left-[3%] md:-translate-x-1/2 z-[60] py-4">
+        <a href="/" className=''><img src={Logo} className='w-28 md:w-32' /></a>
       </div>
       <div className='fixed z-50 w-screen'>
         <div className="flex justify-between px-[2.5%] py-4 bg-[linear-gradient(rgba(15,15,15,0.7),rgba(0,0,0,0))]">
           <SocialLinks className='gap-0.5 hidden md:flex items-center' iconClassName='w-6 h-6' />
-          <div className='flex items-center gap-8'>
+          <div className='flex md:items-center gap-8 max-md:justify-end max-md:w-full'>
             <a href='/contact-us' className='text-[#d7dcd7] hover:text-[#fb511e] text-lg hidden md:flex'>CONTACT</a>
 
             <div className="hamburger-wrapper">
@@ -37,7 +37,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      <div className={`menu w-screen h-auto max-md:pt-[20vh] max-md:pb-6 max-md:overflow-scroll fixed z-40 backdrop-blur-lg backdrop-brightness-50 transition-all duration-1000 ease-in-out bg-[#282828] ${showMenu ? 'opacity-full top-0' : 'opacity-0 -top-full'}`}>
+      <div className={`menu w-screen md:h-auto h-full max-md:pt-[15vh] max-md:pb-6 max-md:overflow-scroll fixed z-40 backdrop-blur-lg backdrop-brightness-50 transition-all duration-1000 ease-in-out bg-[#282828] ${showMenu ? 'opacity-full top-0' : 'opacity-0 -top-full'}`}>
         <div className="flex md:justify-evenly max-md:flex-col max-md:gap-10 w-screen items-start md:items-center max-md:px-[3%] md:py-[6%] text-sm sm:text-lg md:text-3xl">
           <div>
             <div className="flex flex-col items-start h-full gap-3 md:gap-7">
