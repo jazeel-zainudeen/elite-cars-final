@@ -77,6 +77,7 @@ const GroupOfCompanies = () => {
 
             <div className="overflow-hidden max-md:px-[3%]">
                 <GroupSection
+                    url="http://www.google.com"
                     image={groupImg1}
                     title="ELITE AUTOMOBILES"
                     descriptions={[
@@ -86,6 +87,7 @@ const GroupOfCompanies = () => {
                     hasBrands={true} />
 
                 <GroupSection
+                    url="http://www.google.com"
                     image={groupImg2}
                     title="ELITE INVESTMENT COMPANY"
                     descriptions={[
@@ -95,6 +97,7 @@ const GroupOfCompanies = () => {
                     direction="left" />
 
                 <GroupSection
+                    url="http://www.google.com"
                     image={groupImg3}
                     title="ELITE REAL ESTATE COMPANY"
                     descriptions={[
@@ -103,6 +106,7 @@ const GroupOfCompanies = () => {
                     ]} />
 
                 <GroupSection
+                    url="http://www.google.com"
                     image={groupImg4}
                     title="ELITE HEALTHCARE COMPANY"
                     descriptions={[
@@ -112,6 +116,7 @@ const GroupOfCompanies = () => {
                     direction="left" />
 
                 <GroupSection
+                    url="http://www.google.com"
                     image={groupImg5}
                     title="ELITE EDUCATION COMPANY"
                     descriptions={[
@@ -120,6 +125,7 @@ const GroupOfCompanies = () => {
                     ]} />
 
                 <GroupSection
+                    url="http://www.google.com"
                     image={groupImg6}
                     title="ELITE E COMMERCE COMPANY"
                     descriptions={[

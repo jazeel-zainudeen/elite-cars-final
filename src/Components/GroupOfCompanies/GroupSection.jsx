@@ -4,6 +4,7 @@ import Marquee from 'react-fast-marquee';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { ArrowLongRightIcon } from "@heroicons/react/24/outline";
 
+import brandImg from './../../assets/brands/color/lambo.png';
 import brandImg1 from './../../assets/brands/color/image 43.png';
 import brandImg2 from './../../assets/brands/color/image 44.png';
 import brandImg3 from './../../assets/brands/color/image 46.png';
@@ -59,6 +60,7 @@ const GroupSection = ({ image, title, descriptions, url = '#', hasBrands = false
                         </p>
                     ))}
                     <a
+                        target='_blank'
                         href={url}
                         className={`inline-block bg-black hover:bg-[#fb511e] text-white transition-all border border-1 border-black hover:border-[#fb511e] rounded-full px-10 py-3 button-1 font-light mb-2 md:mb-8 ${!hasBrands ? 'mt-6' : ''}`}
                     >
@@ -67,12 +69,13 @@ const GroupSection = ({ image, title, descriptions, url = '#', hasBrands = false
                     </a>
 
                     {hasBrands && (
-                        <Marquee loop={0} className='gap-5 overflow-x-visible brands'>
-                            <img src={brandImg1} className="h-8 px-5" alt="Brand 1" />
-                            <img src={brandImg2} className="h-8 px-5" alt="Brand 2" />
-                            <img src={brandImg3} className="h-8 px-5" alt="Brand 3" />
-                            <img src={brandImg4} className="h-8 px-5" alt="Brand 4" />
-                            <img src={brandImg5} className="h-8 px-5" alt="Brand 5" />
+                        <Marquee loop={0} className='gap-5 !overflow-x-visible brands'>
+                            <a href="/automotive/lamborghini"><img src={brandImg} className="h-8 px-5" alt="Lamborghini" /></a>
+                            <a href="/automotive/jetour"><img src={brandImg1} className="h-8 px-5" alt="Brand 1" /></a>
+                            <a href="/automotive/ultimate_motors"><img src={brandImg2} className="h-8 px-5" alt="Brand 2" /></a>
+                            <a href="/automotive/elite_motors"><img src={brandImg3} className="h-8 px-5" alt="Brand 3" /></a>
+                            <a href="/automotive/the_elite_cars"><img src={brandImg4} className="h-8 px-5" alt="Brand 4" /></a>
+                            <a href="/automotive/zenvo"><img src={brandImg5} className="h-8 px-5" alt="Brand 5" /></a>
                         </Marquee>
                     )}
                 </div>
