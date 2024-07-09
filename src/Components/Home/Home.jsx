@@ -168,7 +168,7 @@ const Home = () => {
   return (
     <>
       <Navbar />
-      <div className="h-screen w-screen section-1">
+      <div className="h-screen w-screen section-1 relative z-10">
         <div className="relative bg-black h-[100vh] w-screen text-white font-barlow">
           <video
             ref={videoRef}
@@ -187,16 +187,16 @@ const Home = () => {
 
           <div className="absolute w-full h-full bg-[linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.9))]"></div>
 
-          <div className="absolute top-1/2 left-[3%] -translate-y-1/2 z-10">
-            <div className="text-lg md:text-xl font-medium mb-4 text-1">WELCOME TO ELITE GROUP HOLDINGS</div>
-            <div className="text-4xl lg:text-6xl font-bold mb-5 text-2">DRIVING <span className="text-[#fb511e]">EXCELLENCE</span><br />BUILDING <span className="text-[#fb511e]">FUTURES</span></div>
-            <button className="hover:bg-[#fb511e] transition-all border border-1 border-white hover:border-[#fb511e] rounded-full px-10 py-3 button-1">
+          <div className="absolute top-1/2 left-[5%] -translate-y-1/2 z-10">
+            <div className="text-lg md:text-xl font-medium md:mb-4 text-1">WELCOME TO ELITE GROUP HOLDINGS</div>
+            <div className="text-4xl lg:text-6xl font-bold max-md:leading-[50px] md:mb-5 mb-10 text-2">DRIVING <span className="text-[#fb511e]">EXCELLENCE</span><br />BUILDING <span className="text-[#fb511e]">FUTURES</span></div>
+            <button className="hover:bg-[#fb511e] transition-all border border-1 border-white hover:border-[#fb511e] rounded-full px-10 py-1 md:py-3 button-1">
               Explore
               <ArrowLongRightIcon className="ms-4 inline w-6 h-6" />
             </button>
           </div>
 
-          <div className="absolute bottom-[10%] w-screen grid grid-rows-1 grid-flow-col gap-[3%] px-[3%] overflow-x-auto whitespace-nowrap">
+          <div className="absolute bottom-[10%] w-screen grid grid-rows-1 grid-flow-col gap-[3%] px-[5%] overflow-x-auto whitespace-nowrap">
             {["Our Company", "Automotive", "Investments", "Real-Estate", "Healthcare", "Education", "Ecommerce"].map((item, index) => (
               <div key={index} onClick={() => handleVideoClick(index)} className={`cursor-pointer  ${currentVideo == index ? 'max-md:block' : 'max-md:hidden'}`}>
                 <div className="pb-1">
@@ -215,7 +215,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="px-[3%] section-2">
+      <div className="px-[5%] section-2">
         <div className="my-10 sm:flex sm:flex-row-reverse sm:items-center">
           <div className="xl:px-24 sm:shrink-1 sm:w-1/2">
             <div className="text-xl sm:text-4xl lg:text-6xl text-[#282828] font-extrabold mb-4 md:mb-8 text-1">ABOUT US</div>
@@ -234,17 +234,17 @@ const Home = () => {
               <ArrowLongRightIcon className="ms-4 inline w-6 h-6" />
             </button>
           </div>
-          <div className="relative sm:w-1/2 sm:grow sm:shrink-0 sm:-mt-10 sm:-ms-[3.5%] overflow-hidden img-1">
+          <div className="relative sm:w-1/2 sm:grow sm:shrink-0 sm:-mt-[6%] sm:-ms-[5.75%] overflow-hidden img-1">
             <div className="hidden sm:block absolute bg-white w-1/4 h-[120%] rotate-12 -right-[11%]"></div>
             <img src={AboutImage} alt="" className="w-full h-full object-cover" />
           </div>
         </div>
       </div>
 
-      <div className="px-[3%] text-xl sm:text-4xl lg:text-6xl font-extrabold md:mb-8 mb-4 section-3-head md:mt-20">EXPLORE OUR SECTORS</div>
+      <div className="px-[5%] text-xl sm:text-4xl lg:text-6xl font-extrabold md:mb-8 mb-4 section-3-head md:mt-20">EXPLORE OUR SECTORS</div>
       <CarouselSection images={CarouselImage2} />
 
-      <div className=" px-[3%] md:py-0 py-10 section-4 bg-[#F7F7F7] md:pb-12 pb-4">
+      <div className=" px-[5%] md:py-0 py-10 section-4 bg-[#F7F7F7] md:pb-12 pb-4">
         <div className="md:grid md:grid-cols-3 flex flex-col md:items-center gap-5 md:gap-[5%] md:py-[5%] mb-4">
           <div className="text-xl sm:text-4xl lg:text-6xl font-extrabold head-1 text-[#282828]">HIGHLIGHTS</div>
           <div className="flex items-start flex-col md:flex-row md:col-span-2 gap-5 md:gap-10">
@@ -256,7 +256,7 @@ const Home = () => {
 
         <div className="grid grid-cols-2 md:grid-cols-4 max-md:gap-5 mb-10 count">
           <div className="grid md:place-content-end place-content-center max-md:aspect-square md:text-right text-center gap-1 sm:gap-2 pt-2 md:pt-10 pb-5 md:px-10 px-2 max-md:border md:border-l-2 border-[#808080] relative md:after:w-[80%] md:after:h-0.5 md:after:left-1/2 md:after:-translate-x-1/2 md:after:bg-[#808080] md:after:absolute md:after:-bottom-2">
-            <div className="text-xl sm:text-4xl lg:text-7xl font-bold">
+            <div className="text-5xl sm:text-7xl lg:text-7xl font-bold">
               <CountUp end={30} redraw={true} delay={1.5}>
                 {({ countUpRef, start }) => (
                   <VisibilitySensor onChange={start} delayedCall>
@@ -267,7 +267,7 @@ const Home = () => {
             <div className="max-md:text-[#282828] text-xs md:text-sm">Years of experience</div>
           </div>
           <div className="grid md:place-content-end place-content-center max-md:aspect-square md:text-right text-center gap-1 sm:gap-2 pt-2 md:pt-10 pb-5 md:px-10 px-2 max-md:border md:border-l-2 border-[#808080] relative md:after:w-[80%] md:after:h-0.5 md:after:left-1/2 md:after:-translate-x-1/2 md:after:bg-[#808080] md:after:absolute md:after:-bottom-2">
-            <div className="text-xl sm:text-4xl lg:text-7xl font-bold">
+            <div className="text-5xl sm:text-7xl lg:text-7xl font-bold">
               <CountUp end={5000} redraw={true} delay={1.5}>
                 {({ countUpRef, start }) => (
                   <VisibilitySensor onChange={start} delayedCall>
@@ -278,7 +278,7 @@ const Home = () => {
             <div className="max-md:text-[#282828] text-xs md:text-sm">Employers</div>
           </div>
           <div className="grid md:place-content-end place-content-center max-md:aspect-square md:text-right text-center gap-1 sm:gap-2 pt-2 md:pt-10 pb-5 md:px-10 px-2 max-md:border md:border-l-2 border-[#808080] relative md:after:w-[80%] md:after:h-0.5 md:after:left-1/2 md:after:-translate-x-1/2 md:after:bg-[#808080] md:after:absolute md:after:-bottom-2">
-            <div className="text-xl sm:text-4xl lg:text-7xl font-bold">
+            <div className="text-5xl sm:text-7xl lg:text-7xl font-bold">
               <CountUp end={40} redraw={true} delay={1.5}>
                 {({ countUpRef, start }) => (
                   <VisibilitySensor onChange={start} delayedCall>
@@ -289,7 +289,7 @@ const Home = () => {
             <div className="max-md:text-[#282828] text-xs md:text-sm">Nationalities</div>
           </div>
           <div className="grid md:place-content-end place-content-center max-md:aspect-square md:text-right text-center gap-1 sm:gap-2 pt-2 md:pt-10 pb-5 md:px-10 px-2 max-md:border md:border-l-2 md:border-r-2 border-[#808080] relative md:after:w-[80%] md:after:h-0.5 md:after:left-1/2 md:after:-translate-x-1/2 md:after:bg-[#808080] md:after:absolute md:after:-bottom-2">
-            <div className="text-xl sm:text-4xl lg:text-7xl font-bold">
+            <div className="text-5xl sm:text-7xl lg:text-7xl font-bold">
               <CountUp end={20} redraw={true} delay={1.5}>
                 {({ countUpRef, start }) => (
                   <VisibilitySensor onChange={start} delayedCall>
@@ -303,11 +303,11 @@ const Home = () => {
       </div>
 
       <div className="section-5 max-md:mt-8">
-        <div className="px-[3%] text-xl sm:text-4xl lg:text-6xl font-extrabold md:mt-20 md:mb-16 mb-6 head-1">EXPLORE OUR PARTNERS</div>
+        <div className="px-[5%] text-xl sm:text-4xl lg:text-6xl font-extrabold md:mt-20 md:mb-8 mb-4 head-1">EXPLORE OUR PARTNERS</div>
         <CarouselSection images={CarouselImage1} />
       </div>
 
-      <div className="px-[3%] mx-auto md:mt-24 my-10 section-6">
+      <div className="px-[5%] mx-auto md:mt-24 my-10 section-6">
         <div className="text-xl sm:text-4xl lg:text-6xl text-[#282828] font-extrabold mb-5">LAMBORGHINI WORLD</div>
         <CarouselSection2 images={CarouselImage3} />
       </div>

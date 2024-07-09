@@ -54,7 +54,7 @@ const Careers = () => {
             </div>
 
             <div className="bg-[#F7F7F7]">
-                <div className="px-[3%]">
+                <div className="px-[5%]">
                     <div className="py-5 flex items-center justify-end">
                         <div className="text-[#404040]">
                             <a href="">Home</a> / Careers
@@ -79,7 +79,7 @@ const Careers = () => {
                     </div>
                 </div>
             </div>
-            <div className="px-[3%]">
+            <div className="px-[5%]">
                 <div className="px-24 my-20 section-3">
                     <div className="text-3xl font-bold text-1">Why Choose The Elite Cars?</div>
                     <ul className="list-disc mb-8 text-2">

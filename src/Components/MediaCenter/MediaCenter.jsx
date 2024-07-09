@@ -86,7 +86,7 @@ const MediaCenter = () => {
             </div>
 
 
-            <div className="px-[3%]">
+            <div className="px-[5%]">
                 <div className="py-5 flex items-center justify-end">
                     <div className="text-[#404040]">
                         <a href="">Home</a> / News
@@ -162,7 +162,7 @@ const MediaCenter = () => {
                 </div>
             </div>
 
-            <div className="bg-[#1E1E1E1A] px-[3%] md:py-20 py-10 section-4">
+            <div className="bg-[#1E1E1E1A] px-[5%] md:py-20 py-10 section-4">
                 <div className="font-medium text-xl md:pb-10 pb-5 head-1">Photo Gallery</div>
                 <div className="grid grid-cols-5 images-1">
                     <img src={GalleryImg1} className="col-span-5 w-full max-h-[80vh] object-cover" alt="" />
@@ -179,7 +179,7 @@ const MediaCenter = () => {
                 </div>
             </div>
 
-            <div className="px-[3%] md:py-20 py-10 section-5">
+            <div className="px-[5%] md:py-20 py-10 section-5">
                 <div className="font-medium text-xl md:pb-10 pb-5 head-1">Video Gallery</div>
                 <div className="grid grid-cols-5 images-1">
                     <img src={GalleryImg1} className="col-span-5 w-full max-h-[80vh] object-cover" alt="" />

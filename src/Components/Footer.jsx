@@ -9,7 +9,7 @@ const Footer = () => {
       <div className="px-[4%] mx-auto">
         <img src={Logo} className='w-44 mx-auto mb-5 md:mb-10' />
 
-        <div className="grid md:grid-cols-3 gap-5 text-[#808080]">
+        <div className="grid md:grid-cols-3 gap-5 text-[#B3B3B3]">
           <div>
             <div className="text-2xl mb-2.5">ABOUT US</div>
             <p className='text-sm mb-2.5'>At Elite Group Holding, we are committed to enhance the quality of life within the communities we serve, continuously seek avenues for fostering growth and make a positive impact on the world and our community. </p>

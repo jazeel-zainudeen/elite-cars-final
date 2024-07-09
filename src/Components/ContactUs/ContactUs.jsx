@@ -52,7 +52,7 @@ const ContactUs = () => {
                 </div>
             </div>
 
-            <div className="px-[3%]">
+            <div className="px-[5%]">
                 <div className="py-5 flex items-center justify-end">
                     <div className="text-[#404040]">
                         <a href="">Home</a> / Contact us

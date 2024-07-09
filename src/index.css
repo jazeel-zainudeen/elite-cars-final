@@ -69,3 +69,12 @@ body {
 .hamburger-wrapper:hover .hamburger-react>div>div {
   background-color: #fb511e !important;
 }
+
+.socialIconCustomColor .social-svg-icon {
+  fill: #d7dcd7 !important;
+  /* color: #; */
+}
+
+.socialIconCustomColor:hover .social-svg-icon {
+  fill: #fb511e !important;
+}

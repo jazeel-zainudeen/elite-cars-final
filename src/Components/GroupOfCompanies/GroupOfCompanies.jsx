@@ -48,7 +48,7 @@ const GroupOfCompanies = () => {
             </div>
 
             <div className="bg-[#F7F7F7] pb-5">
-                <div className="px-[3%]">
+                <div className="px-[5%]">
                     <div className="md:py-5 flex items-center justify-end">
                         <div className="text-[#404040]">
                             <a href="">Home</a> / Our group
@@ -75,7 +75,7 @@ const GroupOfCompanies = () => {
                 </div>
             </div>
 
-            <div className="overflow-hidden max-md:px-[3%]">
+            <div className="overflow-hidden max-md:px-[5%]">
                 <GroupSection
                     url="http://www.google.com"
                     image={groupImg1}

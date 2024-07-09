@@ -97,7 +97,7 @@ const AboutUs = () => {
             </div>
 
             <div className="bg-[#F7F7F7]">
-                <div className="px-[3%]">
+                <div className="px-[5%]">
                     <div className="py-5 flex items-center justify-end">
                         <div className="text-[#404040]">
                             <a href="">Home</a> / About us
@@ -105,7 +105,7 @@ const AboutUs = () => {
                     </div>
                 </div>
 
-                <div className="px-[3%] section-2">
+                <div className="px-[5%] section-2">
                     <div className="my-5 md:my-10 flex max-md:flex-col-reverse max-md:gap-3 sm:flex-row-reverse sm:items-center">
                         <div className="relative sm:w-1/2 sm:grow sm:shrink-0 sm:-me-[3.5%] overflow-hidden img-1">
                             <div className="hidden sm:block absolute bg-[#F7F7F7] w-1/4 h-[120%] rotate-12 -top-10 xl:-left-[17%] lg:-left-[14%] md:-left-[12%] sm:-left-[14%] "></div>
@@ -124,7 +124,7 @@ const AboutUs = () => {
                     </div>
                 </div>
 
-                <div className="px-[3%] sm:-mt-16 md:-mt-20 lg:-mt-24 xl:-mt-26 section-3">
+                <div className="px-[5%] sm:-mt-16 md:-mt-20 lg:-mt-24 xl:-mt-26 section-3">
                     <div className="my-5 md:my-10 sm:flex sm:flex-row-reverse sm:items-center">
                         <div className="xl:px-24 sm:shrink-1 sm:w-1/2 xl:pt-10">
                             <div className="text-md sm:text-base lg:text-xl font-medium mb-2 md:mb-4 text-1">VISION AND MISSION</div>
@@ -149,12 +149,12 @@ const AboutUs = () => {
             </div>
 
             <div className="section-4">
-                <div className="container mx-auto my-10 px-0 md:px-[3%]">
+                <div className="container mx-auto my-10 px-0 md:px-[5%]">
                     <div className="font-extrabold text-5xl uppercase sm:ps-0 ps-[3%] head-1">Meet the team</div>
                 </div>
 
                 <div className="py-5 bg-[#F7F7F7]">
-                    <div className="md:grid grid-cols-2 gap-16 items-center md:px-0 px-[3%]">
+                    <div className="md:grid grid-cols-2 gap-16 items-center md:px-0 px-[5%]">
                         <img src={ImageRakanTurki} alt="" className="h-full object-cover img-1" />
 
                         <div className="md:mt-0 mt-5 text-1">
@@ -168,7 +168,7 @@ const AboutUs = () => {
                 </div>
             </div>
 
-            <div className="container mx-auto md:py-24 py-16 px-[3%] section-5">
+            <div className="container mx-auto md:py-24 py-16 px-[5%] section-5">
                 <div className="font-medium text-xl mb-5 head-1">ORGANIZATION STRUCTURE</div>
 
                 <div className="grid md:grid-cols-3 md:gap-10 carousel-1">
@@ -213,14 +213,14 @@ const AboutUs = () => {
 
             <div className="relative w-screen h-[75vh] section-6">
                 <img src={BackgroundImage2} className="object-cover object-center w-full h-full brightness-50" />
-                <div className="absolute top-1/2 left-0 px-[3%] -translate-y-1/2 z-10 text-white">
+                <div className="absolute top-1/2 left-0 px-[5%] -translate-y-1/2 z-10 text-white">
                     <img src={Logo} className="w-56 mb-5 logo-1" />
                     <div className="text-xl md:text-2xl font-medium mb-3 uppercase text-1">CORPORATE SOCIAL RESPONSIBILITY</div>
                     <div className="text-md md:text-lg font-medium md:w-1/2 text-[#B3B3B3] text-2">Enriching Communities program was launched in 2018, to affirm the Group’s commitment to CSR and helping local and international communities. CSR is embedded in the organization’s culture, as we continue to launch initiatives to support the UAE leadership’s vision and contribute to the economic development while improving the quality of life of our society, customers, partners, and employees.</div>
                 </div>
             </div>
 
-            <div className="py-24 container mx-auto px-[3%] section-7">
+            <div className="py-24 container mx-auto px-[5%] section-7">
                 <div className="text-2xl font-medium mb-3 text-1">Awards & Publications</div>
                 <p className="text-2">AW Rostamani has a long, rich heritage started in 1954 and it has grown to become one of the largest, privately-owned family businesses in the Middle East.</p>
 

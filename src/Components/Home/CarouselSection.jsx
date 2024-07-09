@@ -83,8 +83,8 @@ const CarouselSection = ({ images }) => {
     );
 
   return (
-    <div className="w-screen md:h-[85vh] relative flex flex-col-reverse md:block carouselSection">
-      <div className="md:absolute w-screen h-[50vh] md:h-[85vh]">
+    <div className="w-screen md:h-[80vh] relative flex flex-col-reverse md:block carouselSection">
+      <div className="md:absolute w-screen h-[50vh] md:h-[80vh]">
         <Carousel
           showThumbs={false}
           showStatus={false}
@@ -103,7 +103,7 @@ const CarouselSection = ({ images }) => {
           dynamicHeight={false}
         >
           {images.map((image, index) => (
-            <div key={index} className="w-full h-[50vh] md:h-[85vh]">
+            <div key={index} className="w-full h-[50vh] md:h-[80vh]">
               <img src={image.src} alt={image.name} className="object-cover brightness-[25%] w-full h-full" />
 
               <div className="md:hidden absolute left-0 w-full px-[10%] top-1/2 -translate-y-1/2 text-white text-left">
@@ -125,8 +125,8 @@ const CarouselSection = ({ images }) => {
             onMouseEnter={() => setCurrentImage(image)}
             ref={(el) => (descriptionRefs.current[index] = el)}
           >
-            <div className="md:absolute md:w-full top-[60%] transition-all duration-300 ease-in-out transform">
-              <div className={`select-none text-center text-xs md:text-xl lg:text-2xl transition-all text-black md:text-[#FE5000] max-md:group-hover:text-white`}>
+            <div className="md:absolute md:w-full top-[65%] transition-all duration-300 ease-in-out transform">
+              <div className={`select-none text-center text-xs md:text-xl lg:text-2xl transition-all text-black md:text-white max-md:group-hover:text-white`}>
                 {image.name}
               </div>
               <div className={`max-md:hidden text-center text-xs md:px-3 md:text-sm text-black md:text-[#DFDCDC] overflow-hidden opacity-0 md:group-hover:opacity-100 transition-all duration-700 cursor-pointer`}>
