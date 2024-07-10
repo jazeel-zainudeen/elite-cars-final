@@ -48,17 +48,21 @@ const GroupSection = ({ image, title, descriptions, url = '#', hasBrands = false
         }
     }, [direction]);
 
+
+    const clipPathStyle = isMdOrLarger
+        ? direction === "right"
+            ? "polygon(0 0, 80% 0, 100% 100%, 0% 100%)"
+            : "polygon(20% 0, 100% 0, 100% 100%, 0% 100%)"
+        : undefined;
+
     return (
         <div className="overflow-hidden" ref={sectionRef}>
             <div className={`flex max-md:flex-col-reverse max-md:gap-3 sm:items-center max-md:my-10 ${direction === "right" ? 'md:flex-row' : 'md:flex-row-reverse'}`}>
                 <div className="relative overflow-hidden z-10 md:w-[55.5%]">
                     <img src={image} ref={imageRef} alt="" className="w-full sm:h-[20rem] md:h-[26rem] object-cover"
                         style={{
-                            clipPath: isMdOrLarger
-                                ? direction === "right"
-                                    ? "polygon(0 0, 80% 0, 100% 100%, 0% 100%)"
-                                    : "polygon(20% 0, 100% 0, 100% 100%, 0% 100%)"
-                                : undefined
+                            clipPath: clipPathStyle,
+                            WebkitClipPath: clipPathStyle
                         }} />
                 </div>
                 <div className="md:px-12 lg:px-20 xl:px-24 md:w-[44.5%]" ref={descriptionRef}>
