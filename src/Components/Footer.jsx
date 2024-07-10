@@ -33,12 +33,12 @@ const Footer = () => {
             <div>
               <div className='text-base mb-4'>GROUP OF COMPANIES</div>
               <div className="grid gap-2 text-xs">
-                <a href="" className='hover:text-white'>Automotive</a>
-                <a href="" className='hover:text-white'>Investments</a>
-                <a href="" className='hover:text-white'>Real Estate</a>
-                <a href="" className='hover:text-white'>Healthcare </a>
-                <a href="" className='hover:text-white'>Education</a>
-                <a href="" className='hover:text-white'>Ecommerce</a>
+                <a href="/group-companies/elite-automobiles" className='hover:text-white'>Automotive</a>
+                <a href="group-companies/elite-investment" className='hover:text-white'>Investments</a>
+                <a href="group-companies/elite-real-estate" className='hover:text-white'>Real Estate</a>
+                <a href="group-companies/elite-healthcare" className='hover:text-white'>Healthcare </a>
+                <a href="group-companies/elite-education" className='hover:text-white'>Education</a>
+                <a href="group-companies/elite-e-commerce" className='hover:text-white'>Ecommerce</a>
               </div>
             </div>
           </div>

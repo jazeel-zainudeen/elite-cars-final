@@ -1,3 +1,4 @@
+import { ArrowLongRightIcon } from '@heroicons/react/24/outline';
 import React, { useEffect, useState } from 'react';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
@@ -48,7 +49,11 @@ const CarouselSection2 = ({ images }) => {
                             <div className="text-[#282828] text-3xl font-bold">{images[0].title}</div>
                             <div className="text-[#282828] text-sm font-light">{images[0].description}</div>
                         </div>
-                        <a href={images[0].url} className="text-[#141414] border border-[#141414] hover:border-[#fb511e] px-8 py-1 hover:bg-[#fb511e] hover:text-white rounded-full text-xs font-light">READ MORE</a>
+
+                        <a href={images[0].url} className="block hover:bg-[#fb511e] hover:text-white transition-all border border-1 border-black hover:border-[#fb511e] rounded-full px-10 py-3 button-1">
+                            READ MORE
+                            <ArrowLongRightIcon className="ms-4 inline w-6 h-6" />
+                        </a>
                     </div>
                 </div>
             )}
@@ -71,7 +76,10 @@ const CarouselSection2 = ({ images }) => {
                             <div className="text-sm text-[#404040] font-bold">{image.created_at}</div>
                             <div className="text-md md:text-2xl font-bold uppercase line-clamp-2 hover:line-clamp-none md:leading-8 md:h-16 md:hover:h-auto transition-all">{image.title}</div>
                             <div className="text-sm font-light text-[#404040]">{image.description}</div>
-                            <a href={image.url} className="text-[#141414] border border-[#141414] hover:border-[#fb511e] px-8 py-1 hover:bg-[#fb511e] hover:text-white rounded-full text-xs font-light">READ MORE</a>
+                            <a href={image.url} className="block hover:bg-[#fb511e] hover:text-white transition-all border border-1 border-black hover:border-[#fb511e] rounded-full px-10 py-3 button-1">
+                                READ MORE
+                                <ArrowLongRightIcon className="ms-4 inline w-6 h-6" />
+                            </a>
                         </div>
                     </div>
                 ))}

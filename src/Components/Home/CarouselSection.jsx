@@ -119,7 +119,7 @@ const CarouselSection = ({ images }) => {
       <div className="hidden md:grid-cols-5"></div>
       <div className={`flex justify-evenly gap-3 px-5 md:px-0 mb-5 md:mb-5 md:gap-0 flex-wrap md:grid md:grid-cols-${images.length} md:h-full`}>
         {images.map((image, index) => (
-          <div
+          <a href={image.url}
             key={index}
             className={`relative border md:rounded-none rounded-full px-5 md:px-0 py-1 md:py-0 flex-auto md:border-r border-black md:border-[#808080] group transition-all max-md:hover:bg-black`}
             onMouseEnter={() => setCurrentImage(image)}
@@ -133,7 +133,7 @@ const CarouselSection = ({ images }) => {
                 {image.description}
               </div>
             </div>
-          </div>
+          </a>
         ))}
       </div>
     </div>

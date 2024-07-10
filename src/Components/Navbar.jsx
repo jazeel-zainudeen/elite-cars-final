@@ -70,12 +70,12 @@ const Navbar = () => {
           <div className={`relative ${activeSection === 'automotive' ? '' : 'max-md:hidden'}`}>
             <div className={`flex flex-col items-start transition-all duration-1000 h-full gap-3 md:gap-7 ${activeSection === 'automotive' ? 'opacity-100' : 'opacity-0 hover:active:transition-all'}`}>
               <div className="text-[#989898] font-light whitespace-nowrap hidden md:block">&nbsp;</div>
-              <a href='' className='text-white font-semibold whitespace-nowrap navbar-underline-animation'>ELITE CARS</a>
-              <a href='' className='text-white font-semibold whitespace-nowrap navbar-underline-animation'>ZENVO</a>
-              <a href='' className='text-white font-semibold whitespace-nowrap navbar-underline-animation'>SUNCITY MOTORS</a>
-              <a href='' className='text-white font-semibold whitespace-nowrap navbar-underline-animation'>JETOUR</a>
-              <a href='' className='text-white font-semibold whitespace-nowrap navbar-underline-animation'>ULTIMATE MOTORS</a>
-              <a href='' className='text-white font-semibold whitespace-nowrap navbar-underline-animation'>ELITE MOTOR SERVICES</a>
+              <a href='automotive/the_elite_cars' className='text-white font-semibold whitespace-nowrap navbar-underline-animation'>ELITE CARS</a>
+              <a href='automotive/zenvo' className='text-white font-semibold whitespace-nowrap navbar-underline-animation'>ZENVO</a>
+              <a href='automotive/suncity' className='text-white font-semibold whitespace-nowrap navbar-underline-animation'>SUNCITY MOTORS</a>
+              <a href='automotive/jetour' className='text-white font-semibold whitespace-nowrap navbar-underline-animation'>JETOUR</a>
+              <a href='automotive/ultimate_motors' className='text-white font-semibold whitespace-nowrap navbar-underline-animation'>ULTIMATE MOTORS</a>
+              <a href='automotive/elite_motors' className='text-white font-semibold whitespace-nowrap navbar-underline-animation'>ELITE MOTOR SERVICES</a>
             </div>
           </div>
         </div>

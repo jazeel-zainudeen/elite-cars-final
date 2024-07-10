@@ -44,6 +44,8 @@ function App() {
           <Route path="elite_motors" element={<Automotive title="Elite Motors" BackgroundImage={EliteMotorsImage} />} />
           <Route path="the_elite_cars" element={<Automotive title="The Elite Cars" BackgroundImage={TheEliteCarsImage} />} />
           <Route path="zenvo" element={<Automotive title="Zenvo" BackgroundImage={ZenvoImage} />} />
+          <Route path="lynk" element={<Automotive title="Lynk & Co" BackgroundImage={EliteMotorsImage} />} />
+          <Route path="suncity" element={<Automotive title="Suncity Motors" BackgroundImage={JetourImage} />} />
         </Route>
       </Routes>
     </Router>
