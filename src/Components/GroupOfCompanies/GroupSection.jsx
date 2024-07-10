@@ -73,7 +73,7 @@ const GroupSection = ({ image, title, descriptions, url = '#', hasBrands = false
                         </p>
                     ))}
                     <a
-                        target='_blank'
+                        // target='_blank'
                         href={url}
                         className={`inline-block bg-black hover:bg-[#fb511e] text-white transition-all border border-1 border-black hover:border-[#fb511e] rounded-full px-10 py-3 button-1 font-light mb-2 md:mb-8 ${!hasBrands ? 'mt-6' : ''}`}
                     >

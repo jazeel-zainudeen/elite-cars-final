@@ -62,11 +62,11 @@ const Careers = () => {
                     </div>
 
                     <div className="py-10 flex max-md:flex-col-reverse max-md:gap-3 sm:flex-row-reverse sm:items-center section-2">
-                        <div className="relative sm:w-1/2 sm:grow sm:shrink-0 sm:-me-[3.5%] overflow-hidden img-1">
+                        <div className="relative sm:w-1/2 sm:grow sm:shrink-0 sm:-me-[5.65%] overflow-hidden img-1">
                             <div className="hidden sm:block absolute bg-[#F7F7F7] w-1/4 h-[120%] rotate-12 -top-10 xl:-left-[17%] lg:-left-[14%] md:-left-[12%] sm:-left-[14%] "></div>
                             <img src={Img} alt="" className="w-full sm:h-[20rem] md:h-[26rem] object-cover" />
                         </div>
-                        <div className="xl:px-24 sm:shrink-1 sm:w-1/2">
+                        <div className="xl:pe-10 sm:shrink-1 sm:w-1/2">
                             <div className="text-md sm:text-base lg:text-xl font-medium mb-2 md:mb-4 text-1">JOIN OUR TEAM</div>
                             <p className="font-semibold mb-2 md:mb-4 text-[#404040] text-xl md:text-xl text-2">Where Luxury Meets Opportunity</p>
                             <p className="mb-2 md:mb-4 text-[#404040] text-xs md:text-sm text-3">
@@ -80,7 +80,7 @@ const Careers = () => {
                 </div>
             </div>
             <div className="px-[5%]">
-                <div className="px-24 my-20 section-3">
+                <div className="my-20 section-3">
                     <div className="text-3xl font-bold text-1">Why Choose The Elite Cars?</div>
                     <ul className="list-disc mb-8 text-2">
                         <li className="mt-5"><strong>Work with the best</strong>: Immerse yourself in the world of luxury car brands</li>

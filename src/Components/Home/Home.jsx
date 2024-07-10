@@ -217,7 +217,7 @@ const Home = () => {
       </div>
       <div className="px-[5%] section-2">
         <div className="my-10 sm:flex sm:flex-row-reverse sm:items-center">
-          <div className="xl:px-24 sm:shrink-1 sm:w-1/2">
+          <div className=" sm:shrink-1 sm:w-1/2">
             <div className="text-xl sm:text-4xl lg:text-6xl text-[#282828] font-extrabold mb-4 md:mb-8 text-1">ABOUT US</div>
             <p className="mb-4 text-[#808080] text-xs md:text-base text-2">
               At Elite Group Holding, we are committed to enhance the QUALITY OF LIFE within the communities we serve, continuously seek avenues for fostering growth and make a positive impact on the world and our community.
@@ -257,7 +257,7 @@ const Home = () => {
         <div className="grid grid-cols-2 md:grid-cols-4 max-md:gap-5 mb-10 count">
           <div className="grid md:place-content-end place-content-center max-md:aspect-square md:text-right text-center gap-1 sm:gap-2 pt-2 md:pt-10 pb-5 md:px-10 px-2 max-md:border-y md:border-l-2 border-[#808080] relative md:after:w-[80%] md:after:h-0.5 md:after:left-1/2 md:after:-translate-x-1/2 md:after:bg-[#808080] md:after:absolute md:after:-bottom-2">
             <div className="text-5xl sm:text-7xl lg:text-7xl font-bold">
-              <CountUp end={30} redraw={true} delay={1.5}>
+              <CountUp end={30} redraw={true} delay={1}>
                 {({ countUpRef, start }) => (
                   <VisibilitySensor onChange={start} delayedCall>
                     <span ref={countUpRef} />
@@ -268,7 +268,7 @@ const Home = () => {
           </div>
           <div className="grid md:place-content-end place-content-center max-md:aspect-square md:text-right text-center gap-1 sm:gap-2 pt-2 md:pt-10 pb-5 md:px-10 px-2 max-md:border-y md:border-l-2 border-[#808080] relative md:after:w-[80%] md:after:h-0.5 md:after:left-1/2 md:after:-translate-x-1/2 md:after:bg-[#808080] md:after:absolute md:after:-bottom-2">
             <div className="text-5xl sm:text-7xl lg:text-7xl font-bold">
-              <CountUp end={5000} redraw={true} delay={1.5}>
+              <CountUp end={5000} redraw={true} delay={1}>
                 {({ countUpRef, start }) => (
                   <VisibilitySensor onChange={start} delayedCall>
                     <span ref={countUpRef} />
@@ -279,7 +279,7 @@ const Home = () => {
           </div>
           <div className="grid md:place-content-end place-content-center max-md:aspect-square md:text-right text-center gap-1 sm:gap-2 pt-2 md:pt-10 pb-5 md:px-10 px-2 max-md:border-y md:border-l-2 border-[#808080] relative md:after:w-[80%] md:after:h-0.5 md:after:left-1/2 md:after:-translate-x-1/2 md:after:bg-[#808080] md:after:absolute md:after:-bottom-2">
             <div className="text-5xl sm:text-7xl lg:text-7xl font-bold">
-              <CountUp end={40} redraw={true} delay={1.5}>
+              <CountUp end={40} redraw={true} delay={1}>
                 {({ countUpRef, start }) => (
                   <VisibilitySensor onChange={start} delayedCall>
                     <span ref={countUpRef} />
@@ -290,7 +290,7 @@ const Home = () => {
           </div>
           <div className="grid md:place-content-end place-content-center max-md:aspect-square md:text-right text-center gap-1 sm:gap-2 pt-2 md:pt-10 pb-5 md:px-10 px-2 max-md:border-y md:border-l-2 md:border-r-2 border-[#808080] relative md:after:w-[80%] md:after:h-0.5 md:after:left-1/2 md:after:-translate-x-1/2 md:after:bg-[#808080] md:after:absolute md:after:-bottom-2">
             <div className="text-5xl sm:text-7xl lg:text-7xl font-bold">
-              <CountUp end={20} redraw={true} delay={1.5}>
+              <CountUp end={20} redraw={true} delay={1}>
                 {({ countUpRef, start }) => (
                   <VisibilitySensor onChange={start} delayedCall>
                     <span ref={countUpRef} />

@@ -23,7 +23,16 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="about-group" element={<AboutUs />} />
+
         <Route path="group-companies" element={<GroupOfCompanies />} />
+        <Route path='group-companies'>
+          <Route path="elite-automobiles" element={<Automotive title="Elite Automobiles" BackgroundImage={TheEliteCarsImage} />} />
+          <Route path="elite-investment" element={<Automotive title="Elite Investment Company" BackgroundImage={TheEliteCarsImage} />} />
+          <Route path="elite-real-estate" element={<Automotive title="Elite Real Estate Company" BackgroundImage={TheEliteCarsImage} />} />
+          <Route path="elite-healthcare" element={<Automotive title="Elite Healthcare Company" BackgroundImage={TheEliteCarsImage} />} />
+          <Route path="elite-education" element={<Automotive title="Elite Education Company" BackgroundImage={TheEliteCarsImage} />} />
+          <Route path="elite-e-commerce" element={<Automotive title="Elite E-Commerce Company" BackgroundImage={TheEliteCarsImage} />} />
+        </Route>
         <Route path="careers" element={<Careers />} />
         <Route path="media-center" element={<MediaCenter />} />
         <Route path="contact-us" element={<ContactUs />} />

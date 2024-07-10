@@ -56,7 +56,7 @@ const GroupOfCompanies = () => {
                     </div>
 
                     <div className="py-5 md:py-10 flex max-md:flex-col-reverse max-md:gap-3 sm:flex-row-reverse sm:items-center section-2">
-                        <div className="relative sm:w-1/2 sm:grow sm:shrink-0 sm:-me-[3.5%] overflow-hidden">
+                        <div className="relative sm:w-1/2 sm:grow sm:shrink-0 sm:-me-[5.65%] overflow-hidden">
                             <img src={Image1} alt="" className="w-full sm:h-[20rem] md:h-[26rem] object-cover img-1" />
                         </div>
                         <div className="xl:px-24 sm:shrink-1 sm:w-1/2">
@@ -77,7 +77,7 @@ const GroupOfCompanies = () => {
 
             <div className="overflow-hidden max-md:px-[5%]">
                 <GroupSection
-                    url="http://www.google.com"
+                    url="/group-companies/elite-automobiles"
                     image={groupImg1}
                     title="ELITE AUTOMOBILES"
                     descriptions={[
@@ -87,7 +87,7 @@ const GroupOfCompanies = () => {
                     hasBrands={true} />
 
                 <GroupSection
-                    url="http://www.google.com"
+                    url="/group-companies/elite-investment"
                     image={groupImg2}
                     title="ELITE INVESTMENT COMPANY"
                     descriptions={[
@@ -97,7 +97,7 @@ const GroupOfCompanies = () => {
                     direction="left" />
 
                 <GroupSection
-                    url="http://www.google.com"
+                    url="/group-companies/elite-real-estate"
                     image={groupImg3}
                     title="ELITE REAL ESTATE COMPANY"
                     descriptions={[
@@ -106,7 +106,7 @@ const GroupOfCompanies = () => {
                     ]} />
 
                 <GroupSection
-                    url="http://www.google.com"
+                    url="/group-companies/elite-healthcare"
                     image={groupImg4}
                     title="ELITE HEALTHCARE COMPANY"
                     descriptions={[
@@ -116,7 +116,7 @@ const GroupOfCompanies = () => {
                     direction="left" />
 
                 <GroupSection
-                    url="http://www.google.com"
+                    url="/group-companies/elite-education"
                     image={groupImg5}
                     title="ELITE EDUCATION COMPANY"
                     descriptions={[
@@ -125,7 +125,7 @@ const GroupOfCompanies = () => {
                     ]} />
 
                 <GroupSection
-                    url="http://www.google.com"
+                    url="/group-companies/elite-e-commerce"
                     image={groupImg6}
                     title="ELITE E COMMERCE COMPANY"
                     descriptions={[

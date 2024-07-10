@@ -107,7 +107,7 @@ const AboutUs = () => {
 
                 <div className="px-[5%] section-2">
                     <div className="my-5 md:my-10 flex max-md:flex-col-reverse max-md:gap-3 sm:flex-row-reverse sm:items-center">
-                        <div className="relative sm:w-1/2 sm:grow sm:shrink-0 sm:-me-[3.5%] overflow-hidden img-1">
+                        <div className="relative sm:w-1/2 sm:grow sm:shrink-0 sm:-me-[5.65%] overflow-hidden img-1">
                             <div className="hidden sm:block absolute bg-[#F7F7F7] w-1/4 h-[120%] rotate-12 -top-10 xl:-left-[17%] lg:-left-[14%] md:-left-[12%] sm:-left-[14%] "></div>
                             <img src={Img1} alt="" className="w-full sm:h-[20rem] md:h-[26rem] object-cover" />
                         </div>
@@ -140,7 +140,7 @@ const AboutUs = () => {
                                 We believe in the power of purpose-driven business. Our commitment revolves around enhancing the quality of life within the communities we serve and continuously seeking new avenues for fostering growth
                             </p>
                         </div>
-                        <div className="relative sm:w-1/2 sm:grow sm:shrink-0 sm:-ms-[3.5%] max-md:mt-3 overflow-hidden img-1">
+                        <div className="relative sm:w-1/2 sm:grow sm:shrink-0 sm:-ms-[5.65%] max-md:mt-3 overflow-hidden img-1">
                             <div className="hidden sm:block absolute bg-[#F7F7F7] w-1/4 h-[120%] rotate-12 xl:-right-[17%] lg:-right-[15%] sm:-right-[11%]"></div>
                             <img src={Img2} alt="" className="w-full h-[20rem] md:h-[26rem] object-cover" />
                         </div>
