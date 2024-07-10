@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from 'react';
+import { useMediaQuery } from 'react-responsive';
 import gsap from 'gsap';
 import Marquee from 'react-fast-marquee';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -17,6 +18,7 @@ const GroupSection = ({ image, title, descriptions, url = '#', hasBrands = false
     const sectionRef = useRef(null);
     const imageRef = useRef(null);
     const descriptionRef = useRef(null);
+    const isMdOrLarger = useMediaQuery({ minWidth: 768 });
 
     useEffect(() => {
         const sectionEl = sectionRef.current;
@@ -49,10 +51,17 @@ const GroupSection = ({ image, title, descriptions, url = '#', hasBrands = false
     return (
         <div className="overflow-hidden" ref={sectionRef}>
             <div className={`flex max-md:flex-col-reverse max-md:gap-3 sm:items-center max-md:my-10 ${direction === "right" ? 'md:flex-row' : 'md:flex-row-reverse'}`}>
-                <div className="relative sm:w-1/2 overflow-hidden z-10">
-                    <img src={image} ref={imageRef} alt="" className="w-full sm:h-[20rem] md:h-[26rem] object-cover" />
+                <div className="relative overflow-hidden z-10 md:w-[55.5%]">
+                    <img src={image} ref={imageRef} alt="" className="w-full sm:h-[20rem] md:h-[26rem] object-cover"
+                        style={{
+                            clipPath: isMdOrLarger
+                                ? direction === "right"
+                                    ? "polygon(0 0, 80% 0, 100% 100%, 0% 100%)"
+                                    : "polygon(20% 0, 100% 0, 100% 100%, 0% 100%)"
+                                : undefined
+                        }} />
                 </div>
-                <div className="md:px-12 lg:px-20 xl:px-24 sm:w-1/2" ref={descriptionRef}>
+                <div className="md:px-12 lg:px-20 xl:px-24 md:w-[44.5%]" ref={descriptionRef}>
                     <div className="text-md sm:text-base lg:text-4xl font-semibold mb-2 md:mb-4">{title}</div>
                     {descriptions.map((description, index) => (
                         <p key={index} className="mb-2 md:mb-4 text-[#404040] text-xs lg:text-sm">
