@@ -61,13 +61,13 @@ const GroupOfCompanies = () => {
                         </div>
                         <div className="xl:px-24 sm:shrink-1 sm:w-1/2">
                             <div className="text-lg md:text-4xl font-semibold mb-2 md:mb-4 head-1">ELITE GROUP HOLDING</div>
-                            <p className="mb-2 md:mb-4 text-[#404040] text-xs md:text-sm text-1">
+                            <p className="mb-2 md:mb-4 text-[#404040] text-[1rem] md:text-[1.2rem] text-1">
                                 Elite Group Holding  is pleased to assist you with an attentive multi-channel service:
                             </p>
-                            <p className="mb-2 md:mb-4 text-[#404040] text-xs md:text-sm text-1">
+                            <p className="mb-2 md:mb-4 text-[#404040] text-[1rem] md:text-[1.2rem] text-1">
                                 You can ask your questions to the Elite Group Holding  Assistant, who will guide you through the Elite Group Holding.
                             </p>
-                            <p className="mb-2 md:mb-4 text-[#404040] text-xs md:text-sm text-1">
+                            <p className="mb-2 md:mb-4 text-[#404040] text-[1rem] md:text-[1.2rem] text-1">
                                 If our Assistant is unable to find what you are looking for, please scroll down and get in touch with our dedicated Customer Contact Center via phone or contact form.
                             </p>
                         </div>
@@ -77,7 +77,6 @@ const GroupOfCompanies = () => {
 
             <div className="overflow-hidden max-md:px-[5%]">
                 <GroupSection
-                    url="/group-companies/elite-automobiles"
                     image={groupImg1}
                     title="ELITE AUTOMOBILES"
                     descriptions={[

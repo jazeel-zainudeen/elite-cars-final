@@ -4,7 +4,8 @@ import Home from './Components/Home/Home'
 import AboutUs from './Components/AboutUs/AboutUs';
 import Careers from './Components/Careers/Careers';
 import ContactUs from './Components/ContactUs/ContactUs';
-import Automotive from './Components/Automotive/Automotive';
+import Automotive from './Components/Extras/Automotive';
+import ExtrasGroupOfCompanies from './Components/Extras/GroupOfCompanies';
 import MediaCenter from './Components/MediaCenter/MediaCenter';
 import ZenvoImage from './assets/220c8c6b943f41d253ab5e853e6103b7.png';
 import LamboImage from "./assets/8feed4b5e6b4f73a93ac24feb4a0ddc6.png";
@@ -26,12 +27,60 @@ function App() {
 
         <Route path="group-companies" element={<GroupOfCompanies />} />
         <Route path='group-companies'>
-          <Route path="elite-automobiles" element={<Automotive title="Elite Automobiles" BackgroundImage={TheEliteCarsImage} />} />
-          <Route path="elite-investment" element={<Automotive title="Elite Investment Company" BackgroundImage={TheEliteCarsImage} />} />
-          <Route path="elite-real-estate" element={<Automotive title="Elite Real Estate Company" BackgroundImage={TheEliteCarsImage} />} />
-          <Route path="elite-healthcare" element={<Automotive title="Elite Healthcare Company" BackgroundImage={TheEliteCarsImage} />} />
-          <Route path="elite-education" element={<Automotive title="Elite Education Company" BackgroundImage={TheEliteCarsImage} />} />
-          <Route path="elite-e-commerce" element={<Automotive title="Elite E-Commerce Company" BackgroundImage={TheEliteCarsImage} />} />
+          <Route path="elite-automobiles"
+            element={<ExtrasGroupOfCompanies
+              title="Elite Automobiles"
+              descriptions={[
+                "Elite Group Holding  is pleased to assist you with an attentive multi-channel service:",
+                "You can ask your questions to the Elite Group Holding  Assistant who will guide you through the Elite Group Holding."
+              ]}
+              BackgroundImage={TheEliteCarsImage} />} />
+
+          <Route path="elite-investment"
+            element={<ExtrasGroupOfCompanies
+              title="Elite Investment Company"
+              descriptions={[
+                "Elite Group Holding  is pleased to assist you with an attentive multi-channel service:",
+                "You can ask your questions to the Elite Group Holding  Assistant, who will guide you through the Elite Group Holding."
+              ]}
+              BackgroundImage={TheEliteCarsImage} />} />
+
+          <Route path="elite-real-estate"
+            element={<ExtrasGroupOfCompanies
+              title="Elite Real Estate Company"
+              descriptions={[
+                "Elite Group Holding  is pleased to assist you with an attentive multi-channel service:",
+                "You can ask your questions to the Elite Group Holding  Assistant who will guide you through the Elite Group Holding."
+              ]}
+              BackgroundImage={TheEliteCarsImage} />} />
+
+          <Route path="elite-healthcare"
+            element={<ExtrasGroupOfCompanies
+              title="Elite Healthcare Company"
+              descriptions={[
+                "Elite Group Holding  is pleased to assist you with an attentive multi-channel service:",
+                "You can ask your questions to the Elite Group Holding  Assistant, who will guide you through the Elite Group Holding."
+              ]}
+              BackgroundImage={TheEliteCarsImage} />} />
+
+          <Route path="elite-education"
+            element={<ExtrasGroupOfCompanies
+              title="Elite Education Company"
+              descriptions={[
+                "Elite Group Holding  is pleased to assist you with an attentive multi-channel service:",
+                "You can ask your questions to the Elite Group Holding  Assistant who will guide you through the Elite Group Holding."
+              ]}
+              BackgroundImage={TheEliteCarsImage} />} />
+
+          <Route path="elite-e-commerce"
+            element={<ExtrasGroupOfCompanies
+              title="Elite E-Commerce Company"
+              descriptions={[
+                "Elite Group Holding  is pleased to assist you with an attentive multi-channel service:",
+                "You can ask your questions to the Elite Group Holding  Assistant, who will guide you through the Elite Group Holding."
+              ]}
+              BackgroundImage={TheEliteCarsImage} />} />
+
         </Route>
         <Route path="careers" element={<Careers />} />
         <Route path="media-center" element={<MediaCenter />} />

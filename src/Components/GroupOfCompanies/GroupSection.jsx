@@ -14,7 +14,7 @@ import brandImg5 from './../../assets/brands/color/Rectangle 45.png';
 
 gsap.registerPlugin(ScrollTrigger);
 
-const GroupSection = ({ image, title, descriptions, url = '#', hasBrands = false, direction = "right" }) => {
+const GroupSection = ({ image, title, descriptions, url = false, hasBrands = false, direction = "right" }) => {
     const sectionRef = useRef(null);
     const imageRef = useRef(null);
     const descriptionRef = useRef(null);
@@ -57,7 +57,7 @@ const GroupSection = ({ image, title, descriptions, url = '#', hasBrands = false
 
     return (
         <div className="overflow-hidden" ref={sectionRef}>
-            <div className={`flex max-md:flex-col-reverse max-md:gap-3 sm:items-center max-md:my-10 ${direction === "right" ? 'md:flex-row' : 'md:flex-row-reverse'}`}>
+            <div className={`flex max-md:flex-col-reverse max-md:gap-3 sm:items-center max-md:my-5 ${direction === "right" ? 'md:flex-row' : 'md:flex-row-reverse'}`}>
                 <div className="relative overflow-hidden z-10 md:w-[55.5%]">
                     <img src={image} ref={imageRef} alt="" className="w-full sm:h-[20rem] md:h-[26rem] object-cover"
                         style={{
@@ -68,21 +68,23 @@ const GroupSection = ({ image, title, descriptions, url = '#', hasBrands = false
                 <div className="md:px-12 lg:px-20 xl:px-24 md:w-[44.5%]" ref={descriptionRef}>
                     <div className="text-md sm:text-base lg:text-4xl font-semibold mb-2 md:mb-4">{title}</div>
                     {descriptions.map((description, index) => (
-                        <p key={index} className="mb-2 md:mb-4 text-[#404040] text-xs lg:text-sm">
+                        <p key={index} className="mb-2 md:mb-4 text-[#404040] text-[1rem] md:text-[1.2rem]">
                             {description}
                         </p>
                     ))}
-                    <a
-                        // target='_blank'
-                        href={url}
-                        className={`inline-block bg-black hover:bg-[#fb511e] text-white transition-all border border-1 border-black hover:border-[#fb511e] rounded-full px-10 py-3 button-1 font-light mb-2 md:mb-8 ${!hasBrands ? 'mt-6' : ''}`}
-                    >
-                        Read More
-                        <ArrowLongRightIcon className="ms-4 inline w-6 h-6" />
-                    </a>
+
+                    {url && (
+                        <a
+                            href={url}
+                            className={`inline-block bg-white hover:bg-[#fb511e] text-black hover:text-white transition-all border border-1 border-black hover:border-[#fb511e] rounded-full px-10 py-3 button-1 font-light mb-2 md:mb-8 ${!hasBrands ? 'mt-6' : ''}`}
+                        >
+                            Read More
+                            <ArrowLongRightIcon className="ms-4 inline w-6 h-6" />
+                        </a>
+                    )}
 
                     {hasBrands && (
-                        <Marquee loop={0} className='gap-5 !overflow-x-visible brands'>
+                        <Marquee loop={0} className='gap-5 brands md:mt-10 mt-5 mb-5 md:mb-0'>
                             <a href="/automotive/lamborghini"><img src={brandImg} className="h-8 px-5" alt="Lamborghini" /></a>
                             <a href="/automotive/jetour"><img src={brandImg1} className="h-8 px-5" alt="Brand 1" /></a>
                             <a href="/automotive/ultimate_motors"><img src={brandImg2} className="h-8 px-5" alt="Brand 2" /></a>

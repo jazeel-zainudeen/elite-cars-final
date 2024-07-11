@@ -78,3 +78,18 @@ body {
 .socialIconCustomColor:hover .social-svg-icon {
   fill: #fb511e !important;
 }
+
+.section-spaced {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+}
+
+@media screen and (max-width: 991px) {
+  .section-spaced {
+    padding-top: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
