@@ -60,22 +60,22 @@ const Navbar = () => {
             <div className="flex flex-col items-start h-full gap-3 md:gap-7">
               <div className="text-[#989898] font-light whitespace-nowrap">SECTORS</div>
               <a onMouseEnter={() => handleHover('automotive')} className={`${activeSection === 'automotive' ? 'text-white after:opacity-100 after:w-full' : 'text-[#989898]'} cursor-pointer font-semibold whitespace-nowrap transition-all navbar-underline-animation`}>AUTOMOTIVE</a>
-              <a href='group-companies/elite-investment' onMouseEnter={() => handleHover('investments')} className={`${activeSection === 'investments' ? 'text-white after:opacity-100 after:w-full' : 'text-[#989898]'} cursor-pointer font-semibold whitespace-nowrap transition-all navbar-underline-animation`}>INVESTMENTS</a>
-              <a href='group-companies/elite-real-estate' onMouseEnter={() => handleHover('real_estate')} className={`${activeSection === 'real_estate' ? 'text-white after:opacity-100 after:w-full' : 'text-[#989898]'} cursor-pointer font-semibold whitespace-nowrap transition-all navbar-underline-animation`}>REAL ESTATE</a>
-              <a href='group-companies/elite-healthcare' onMouseEnter={() => handleHover('healthcare')} className={`${activeSection === 'healthcare' ? 'text-white after:opacity-100 after:w-full' : 'text-[#989898]'} cursor-pointer font-semibold whitespace-nowrap transition-all navbar-underline-animation`}>HEALTHCARE</a>
-              <a href='group-companies/elite-education' onMouseEnter={() => handleHover('education')} className={`${activeSection === 'education' ? 'text-white after:opacity-100 after:w-full' : 'text-[#989898]'} cursor-pointer font-semibold whitespace-nowrap transition-all navbar-underline-animation`}>EDUCATION</a>
-              <a href='group-companies/elite-e-commerce' onMouseEnter={() => handleHover('ecommerce')} className={`${activeSection === 'ecommerce' ? 'text-white after:opacity-100 after:w-full' : 'text-[#989898]'} cursor-pointer font-semibold whitespace-nowrap transition-all navbar-underline-animation`}>ECOMMERCE</a>
+              <a href='/group-companies/elite-investment' onMouseEnter={() => handleHover('investments')} className={`${activeSection === 'investments' ? 'text-white after:opacity-100 after:w-full' : 'text-[#989898]'} cursor-pointer font-semibold whitespace-nowrap transition-all navbar-underline-animation`}>INVESTMENTS</a>
+              <a href='/group-companies/elite-real-estate' onMouseEnter={() => handleHover('real_estate')} className={`${activeSection === 'real_estate' ? 'text-white after:opacity-100 after:w-full' : 'text-[#989898]'} cursor-pointer font-semibold whitespace-nowrap transition-all navbar-underline-animation`}>REAL ESTATE</a>
+              <a href='/group-companies/elite-healthcare' onMouseEnter={() => handleHover('healthcare')} className={`${activeSection === 'healthcare' ? 'text-white after:opacity-100 after:w-full' : 'text-[#989898]'} cursor-pointer font-semibold whitespace-nowrap transition-all navbar-underline-animation`}>HEALTHCARE</a>
+              <a href='/group-companies/elite-education' onMouseEnter={() => handleHover('education')} className={`${activeSection === 'education' ? 'text-white after:opacity-100 after:w-full' : 'text-[#989898]'} cursor-pointer font-semibold whitespace-nowrap transition-all navbar-underline-animation`}>EDUCATION</a>
+              <a href='/group-companies/elite-e-commerce' onMouseEnter={() => handleHover('ecommerce')} className={`${activeSection === 'ecommerce' ? 'text-white after:opacity-100 after:w-full' : 'text-[#989898]'} cursor-pointer font-semibold whitespace-nowrap transition-all navbar-underline-animation`}>ECOMMERCE</a>
             </div>
           </div>
           <div className={`relative ${activeSection === 'automotive' ? '' : 'max-md:hidden'}`}>
             <div className={`flex flex-col items-start transition-all duration-1000 h-full gap-3 md:gap-7 ${activeSection === 'automotive' ? 'opacity-100' : 'opacity-0 hover:active:transition-all'}`}>
               <div className="text-[#989898] font-light whitespace-nowrap hidden md:block">&nbsp;</div>
-              <a href='automotive/the_elite_cars' className='text-white font-semibold whitespace-nowrap navbar-underline-animation'>ELITE CARS</a>
-              <a href='automotive/zenvo' className='text-white font-semibold whitespace-nowrap navbar-underline-animation'>ZENVO</a>
-              <a href='automotive/suncity' className='text-white font-semibold whitespace-nowrap navbar-underline-animation'>SUNCITY MOTORS</a>
-              <a href='automotive/jetour' className='text-white font-semibold whitespace-nowrap navbar-underline-animation'>JETOUR</a>
-              <a href='automotive/ultimate_motors' className='text-white font-semibold whitespace-nowrap navbar-underline-animation'>ULTIMATE MOTORS</a>
-              <a href='automotive/elite_motors' className='text-white font-semibold whitespace-nowrap navbar-underline-animation'>ELITE MOTOR SERVICES</a>
+              <a href='/automotive/the_elite_cars' className='text-white font-semibold whitespace-nowrap navbar-underline-animation'>ELITE CARS</a>
+              <a href='/automotive/zenvo' className='text-white font-semibold whitespace-nowrap navbar-underline-animation'>ZENVO</a>
+              <a href='/automotive/suncity' className='text-white font-semibold whitespace-nowrap navbar-underline-animation'>SUNCITY MOTORS</a>
+              <a href='/automotive/jetour' className='text-white font-semibold whitespace-nowrap navbar-underline-animation'>JETOUR</a>
+              <a href='/automotive/ultimate_motors' className='text-white font-semibold whitespace-nowrap navbar-underline-animation'>ULTIMATE MOTORS</a>
+              <a href='/automotive/elite_motors' className='text-white font-semibold whitespace-nowrap navbar-underline-animation'>ELITE MOTOR SERVICES</a>
             </div>
           </div>
         </div>

@@ -31,7 +31,7 @@ function App() {
             element={<ExtrasGroupOfCompanies
               title="Elite Automobiles"
               descriptions={[
-                "Elite Group Holding  is pleased to assist you with an attentive multi-channel service:",
+                "Elite Group Holding is pleased to assist you with an attentive multi-channel service:",
                 "You can ask your questions to the Elite Group Holding  Assistant who will guide you through the Elite Group Holding."
               ]}
               BackgroundImage={TheEliteCarsImage} />} />
@@ -87,14 +87,46 @@ function App() {
         <Route path="contact-us" element={<ContactUs />} />
 
         <Route path='automotive'>
-          <Route path="lamborghini" element={<Automotive title="Lamborghini" BackgroundImage={LamboImage} />} />
-          <Route path="jetour" element={<Automotive title="Jetour" BackgroundImage={JetourImage} />} />
-          <Route path="ultimate_motors" element={<Automotive title="Ultimate Motors" BackgroundImage={UltimateMotorsImage} />} />
-          <Route path="elite_motors" element={<Automotive title="Elite Motors" BackgroundImage={EliteMotorsImage} />} />
-          <Route path="the_elite_cars" element={<Automotive title="The Elite Cars" BackgroundImage={TheEliteCarsImage} />} />
-          <Route path="zenvo" element={<Automotive title="Zenvo" BackgroundImage={ZenvoImage} />} />
-          <Route path="lynk" element={<Automotive title="Lynk & Co" BackgroundImage={EliteMotorsImage} />} />
-          <Route path="suncity" element={<Automotive title="Suncity Motors" BackgroundImage={JetourImage} />} />
+          <Route path="lamborghini" element={<Automotive title="Lamborghini" BackgroundImage={LamboImage}
+            descriptions={[
+              "Elite Group Holding  is pleased to assist you with an attentive multi-channel service:",
+              "You can ask your questions to the Elite Group Holding  Assistant, who will guide you through the Elite Group Holding."
+            ]} />} />
+          <Route path="jetour" element={<Automotive title="Jetour" BackgroundImage={JetourImage}
+            descriptions={[
+              "Elite Group Holding  is pleased to assist you with an attentive multi-channel service:",
+              "You can ask your questions to the Elite Group Holding  Assistant, who will guide you through the Elite Group Holding."
+            ]} />} />
+          <Route path="ultimate_motors" element={<Automotive title="Ultimate Motors" BackgroundImage={UltimateMotorsImage}
+            descriptions={[
+              "Elite Group Holding  is pleased to assist you with an attentive multi-channel service:",
+              "You can ask your questions to the Elite Group Holding  Assistant, who will guide you through the Elite Group Holding."
+            ]} />} />
+          <Route path="elite_motors" element={<Automotive title="Elite Motors" BackgroundImage={EliteMotorsImage}
+            descriptions={[
+              "Elite Group Holding  is pleased to assist you with an attentive multi-channel service:",
+              "You can ask your questions to the Elite Group Holding  Assistant, who will guide you through the Elite Group Holding."
+            ]} />} />
+          <Route path="the_elite_cars" element={<Automotive title="The Elite Cars" BackgroundImage={TheEliteCarsImage}
+            descriptions={[
+              "Elite Group Holding  is pleased to assist you with an attentive multi-channel service:",
+              "You can ask your questions to the Elite Group Holding  Assistant, who will guide you through the Elite Group Holding."
+            ]} />} />
+          <Route path="zenvo" element={<Automotive title="Zenvo" BackgroundImage={ZenvoImage}
+            descriptions={[
+              "Elite Group Holding  is pleased to assist you with an attentive multi-channel service:",
+              "You can ask your questions to the Elite Group Holding  Assistant, who will guide you through the Elite Group Holding."
+            ]} />} />
+          <Route path="lynk" element={<Automotive title="Lynk & Co" BackgroundImage={EliteMotorsImage}
+            descriptions={[
+              "Elite Group Holding  is pleased to assist you with an attentive multi-channel service:",
+              "You can ask your questions to the Elite Group Holding  Assistant, who will guide you through the Elite Group Holding."
+            ]} />} />
+          <Route path="suncity" element={<Automotive title="Suncity Motors" BackgroundImage={JetourImage}
+            descriptions={[
+              "Elite Group Holding  is pleased to assist you with an attentive multi-channel service:",
+              "You can ask your questions to the Elite Group Holding  Assistant, who will guide you through the Elite Group Holding."
+            ]} />} />
         </Route>
       </Routes>
     </Router>
