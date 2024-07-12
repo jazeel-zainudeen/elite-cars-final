@@ -88,7 +88,7 @@ const MediaCenter = () => {
 
             <div className="px-[5%]">
                 <div className="py-5 flex items-center justify-end">
-                    <div className="text-[#404040]">
+                    <div className="text-[#282828]">
                         <a href="">Home</a> / News
                     </div>
                 </div>
@@ -120,7 +120,7 @@ const MediaCenter = () => {
                         <div className="flex items-start max-md:flex-col gap-10">
                             <img src={Img1} alt="" className="md:w-1/2" />
                             <div className="md:w-1/2">
-                                <div className="font-normal text-[#404040] mb-4 md:mb-6">February 22, 2024, Dubai, UAE</div>
+                                <div className="font-normal text-[#282828] mb-4 md:mb-6">February 22, 2024, Dubai, UAE</div>
                                 <div className="font-bold text-2xl md:text-4xl mb-5 uppercase line-clamp-2">The Elite Cars Presents Zenvo Aurora - Agil & Tur in the MENA</div>
                                 <div className="text-lg mb-5">The Elite Cars, the leading luxury automotive dealership in the United Arab Emirates, through their exclusive partnership with Zenvo Automotive, the renowned Danish supercar  </div>
 
@@ -134,7 +134,7 @@ const MediaCenter = () => {
                         <div className="flex items-start max-md:flex-col gap-10">
                             <img src={Img2} alt="" className="md:w-1/2" />
                             <div className="md:w-1/2">
-                                <div className="font-normal text-[#404040] mb-4 md:mb-6">February 22, 2024, Dubai, UAE</div>
+                                <div className="font-normal text-[#282828] mb-4 md:mb-6">February 22, 2024, Dubai, UAE</div>
                                 <div className="font-bold text-2xl md:text-4xl mb-5 uppercase line-clamp-2">The All-New Jetour T2 Debuts in the UAE</div>
                                 <div className="text-lg mb-5">The Elite Cars, the leading luxury automotive dealership in the United Arab Emirates, through their exclusive partnership with Zenvo Automotive, the renowned Danish supercar</div>
 
@@ -148,7 +148,7 @@ const MediaCenter = () => {
                         <div className="flex items-start max-md:flex-col gap-10">
                             <img src={Img1} alt="" className="md:w-1/2" />
                             <div className="md:w-1/2">
-                                <div className="font-normal text-[#404040] mb-4 md:mb-6">February 22, 2024, Dubai, UAE</div>
+                                <div className="font-normal text-[#282828] mb-4 md:mb-6">February 22, 2024, Dubai, UAE</div>
                                 <div className="font-bold text-2xl md:text-4xl mb-5 uppercase line-clamp-2">2023 Jetour Dashing Makes Its Debut in UAE Through The Elite Cars</div>
                                 <div className="text-lg mb-5">The Elite Cars, the leading luxury automotive dealership in the United Arab Emirates, through their exclusive partnership with Zenvo Automotive, the renowned Danish supercar  </div>
 

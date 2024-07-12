@@ -55,10 +55,10 @@ const Brands = () => {
     return (
         <div
             style={{ 'backgroundImage': `url(${BrandsBgImg})` }}
-            className="md:h-screen w-screen bg-no-repeat bg-center bg-cover px-[5%] flex flex-col md:justify-center text-white overflow-hidden section-brand relative">
+            className="md:h-screen w-screen bg-no-repeat bg-center bg-cover px-[5%] flex flex-col md:justify-center text-white overflow-hidden section-brand relative py-4">
             <div className="absolute top-0 left-0 w-full h-full bg-black/70"></div>
             <div className="flex items-start gap-12 flex-col md:w-3/5 md:pt-0 pt-16">
-                <div className="font-bold md:text-5xl text-4xl head-1">OUR BRANDS</div>
+                <div className="font-bold md:text-5xl text-4xl lg:text-[2.5rem] font-semibold head-1">OUR BRANDS</div>
                 <p className="text-xs md:text-lg description-1 text-[#B3B3B3]">We believe that excellence is the cornerstone of our diverse portfolio, which spans across a multitude of industries. Our unwavering commitment to quality is reflected in every part of our businesses, driven by our team of highly experienced professionals who are dedicated to delivering exceptional results.</p>
                 {isMobile ? (
                     <Marquee className='gap-5 pb-16 brands'>

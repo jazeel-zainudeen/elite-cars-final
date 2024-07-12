@@ -68,7 +68,7 @@ const GroupSection = ({ image, title, descriptions, url = false, hasBrands = fal
                 <div className="md:px-12 lg:px-20 xl:px-24 md:w-[44.5%]" ref={descriptionRef}>
                     <div className="text-md sm:text-base lg:text-4xl font-semibold mb-2 md:mb-4">{title}</div>
                     {descriptions.map((description, index) => (
-                        <p key={index} className="mb-2 md:mb-4 text-[#404040] text-[1rem] md:text-[1.2rem]">
+                        <p key={index} className="mb-2 md:mb-4 text-[#282828] text-[1rem] md:text-[1.2rem]">
                             {description}
                         </p>
                     ))}

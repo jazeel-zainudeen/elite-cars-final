@@ -31,7 +31,7 @@ const GroupOfCompanies = ({ BackgroundImage, title, descriptions = [] }) => {
 
             <div className="px-[5%] pb-10">
                 <div className="md:py-5 py-2 flex items-center md:justify-end justify-center">
-                    <div className="text-[#404040] md:text-end text-center text-sm">
+                    <div className="text-[#282828] md:text-end text-center text-sm">
                         <a href="/">Home</a> / <a href="/group-of-companies">Group of Companies</a> / {title}
                     </div>
                 </div>
@@ -39,7 +39,7 @@ const GroupOfCompanies = ({ BackgroundImage, title, descriptions = [] }) => {
                 <div className="section-spaced text-center">
                     <div className="text-2xl lg:text-6xl font-semibold mb-10 md:mt-6 mt-6 uppercase">{title}</div>
                     {descriptions.map((description, index) => (
-                        <p key={index} className="mb-2 md:mb-3 text-[#404040] text-[1rem] lg:text-[1.2rem]">
+                        <p key={index} className="mb-2 md:mb-3 text-[#282828] text-[1rem] lg:text-[1.2rem]">
                             {description}
                         </p>
                     ))}

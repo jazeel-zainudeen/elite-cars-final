@@ -56,7 +56,7 @@ const Careers = () => {
             <div className="bg-[#F7F7F7]">
                 <div className="px-[5%]">
                     <div className="py-5 flex items-center justify-end">
-                        <div className="text-[#404040]">
+                        <div className="text-[#282828]">
                             <a href="">Home</a> / Careers
                         </div>
                     </div>
@@ -68,11 +68,11 @@ const Careers = () => {
                         </div>
                         <div className="xl:pe-10 sm:shrink-1 sm:w-1/2">
                             <div className="text-md sm:text-base lg:text-xl font-medium mb-2 md:mb-4 text-1">JOIN OUR TEAM</div>
-                            <p className="font-semibold mb-2 md:mb-4 text-[#404040] text-xl md:text-xl text-2">Where Luxury Meets Opportunity</p>
-                            <p className="mb-2 md:mb-4 text-[#404040] text-xs md:text-sm text-3">
+                            <p className="font-semibold mb-2 md:mb-4 text-[#282828] text-xl md:text-xl text-2">Where Luxury Meets Opportunity</p>
+                            <p className="mb-2 md:mb-4 text-[#282828] text-xs md:text-sm text-3">
                                 Welcome to the pinnacle of automotive excellence. At The Elite Cars, we're not just selling cars, we're delivering dreams. We are one of the leading luxury car dealerships based in The UAE, offering an unparalleled selection of the world's finest luxury automobiles.
                             </p>
-                            <p className="mb-2 md:mb-4 text-[#404040] text-xs md:text-sm text-3">
+                            <p className="mb-2 md:mb-4 text-[#282828] text-xs md:text-sm text-3">
                                 But our commitment to excellence extends beyond the showroom floor. We are also dedicated to fostering a world-class work environment for our team members. If you are passionate about the automotive industry, thrive in a fast-paced environment, and are dedicated to exceeding expectations, we invite you to explore career opportunities at The Elite cars
                             </p>
                         </div>

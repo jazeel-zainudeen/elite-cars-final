@@ -40,13 +40,13 @@ const CarouselSection2 = ({ images }) => {
     return (
         <>
             {!isMobile && (
-                <div className="mb-10 md:block hidden">
+                <div className="mb-10 md:block hidden px-3">
                     <img src={images[0].src} className="w-full mb-5" alt="" />
 
                     <div className="flex justify-between items-center">
                         <div className="flex flex-col gap-1.5">
-                            <div className="text-[#282828] font-bold text-sm">{images[0].created_at}</div>
-                            <div className="text-[#282828] text-3xl font-bold">{images[0].title}</div>
+                            <div className="text-[#282828] font-semibold text-sm">{images[0].created_at}</div>
+                            <div className="text-[#282828] text-3xl font-semibold">{images[0].title}</div>
                             <div className="text-[#282828] text-sm font-light">{images[0].description}</div>
                         </div>
 
@@ -70,13 +70,13 @@ const CarouselSection2 = ({ images }) => {
                 itemClass="px-3"
             >
                 {images.slice(isMobile ? 0 : 1).map((image, index) => (
-                    <div key={index} className="carousel-slide">
+                    <div key={index} className="carousel-slide py-12">
                         <img src={image.src} className='h-48 w-full object-cover' alt="" />
                         <div className="flex flex-col justify-between items-start gap-1.5 md:gap-3 mt-6">
-                            <div className="text-sm text-[#404040] font-bold">{image.created_at}</div>
-                            <div className="text-md md:text-2xl font-bold uppercase line-clamp-2 hover:line-clamp-none md:leading-8 md:h-16 md:hover:h-auto transition-all">{image.title}</div>
-                            <div className="text-sm font-light text-[#404040]">{image.description}</div>
-                            <a href={image.url} className="block hover:bg-[#fb511e] hover:text-white transition-all border border-1 border-black hover:border-[#fb511e] rounded-full px-10 py-3 button-1">
+                            <div className="text-sm text-[#282828] font-semibold">{image.created_at}</div>
+                            <div className="text-md md:text-2xl font-semibold uppercase line-clamp-2 hover:line-clamp-none md:leading-8 md:h-16 md:hover:h-auto transition-all">{image.title}</div>
+                            <div className="text-sm font-light text-[#282828]">{image.description}</div>
+                            <a href={image.url} className="block hover:bg-[#fb511e] hover:text-white transition-all border border-1 border-[#282828] hover:border-[#fb511e] rounded-full px-10 py-3 button-1">
                                 READ MORE
                                 <ArrowLongRightIcon className="ms-4 inline w-6 h-6" />
                             </a>

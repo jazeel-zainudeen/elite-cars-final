@@ -99,7 +99,7 @@ const AboutUs = () => {
             <div className="bg-[#F7F7F7]">
                 <div className="px-[5%]">
                     <div className="py-5 flex items-center justify-end">
-                        <div className="text-[#404040]">
+                        <div className="text-[#282828]">
                             <a href="">Home</a> / About us
                         </div>
                     </div>
@@ -113,11 +113,11 @@ const AboutUs = () => {
                         </div>
                         <div className="xl:px-24 sm:shrink-1 sm:w-1/2">
                             <div className="text-md sm:text-base lg:text-xl font-medium mb-2 md:mb-4 text-1">OUR HISTORY</div>
-                            <p className="font-semibold mb-2 md:mb-4 text-[#404040] text-xl md:text-xl text-2">It all started with a dream</p>
-                            <p className="mb-2 md:mb-4 text-[#404040] text-xs md:text-sm text-3">
+                            <p className="font-semibold mb-2 md:mb-4 text-[#282828] text-xl md:text-xl text-2">It all started with a dream</p>
+                            <p className="mb-2 md:mb-4 text-[#282828] text-xs md:text-sm text-3">
                                 Elite Group Holding Ltd, is more than just a group holding company. We are visionaries, innovators and creators of tomorrow’s possibilities.
                             </p>
-                            <p className="mb-2 md:mb-4 text-[#404040] text-xs md:text-sm text-3">
+                            <p className="mb-2 md:mb-4 text-[#282828] text-xs md:text-sm text-3">
                                 We believe in the power of purpose-driven business. Our commitment revolves around enhancing the quality of life within the communities we serve and continuously seeking new avenues for fostering growth
                             </p>
                         </div>
@@ -128,15 +128,15 @@ const AboutUs = () => {
                     <div className="my-5 md:my-10 sm:flex sm:flex-row-reverse sm:items-center">
                         <div className="xl:px-24 sm:shrink-1 sm:w-1/2 xl:pt-10">
                             <div className="text-md sm:text-base lg:text-xl font-medium mb-2 md:mb-4 text-1">VISION AND MISSION</div>
-                            <p className="mb-2 md:mb-4 text-[#404040] text-xs md:text-sm text-2">
+                            <p className="mb-2 md:mb-4 text-[#282828] text-xs md:text-sm text-2">
                                 Elite Group Holding Ltd, is more than just a group holding company. We are visionaries, innovators and creators of tomorrow’s possibilities.
                             </p>
 
-                            <p className="mb-2 md:mb-4 text-[#404040] text-xs md:text-sm text-2">
+                            <p className="mb-2 md:mb-4 text-[#282828] text-xs md:text-sm text-2">
                                 We believe in the power of purpose-driven business. Our commitment revolves around enhancing the quality of life within the communities we serve and continuously seeking new avenues for fostering growth
                             </p>
 
-                            <p className="mb-2 md:mb-4 text-[#404040] text-xs md:text-sm text-2">
+                            <p className="mb-2 md:mb-4 text-[#282828] text-xs md:text-sm text-2">
                                 We believe in the power of purpose-driven business. Our commitment revolves around enhancing the quality of life within the communities we serve and continuously seeking new avenues for fostering growth
                             </p>
                         </div>
@@ -153,11 +153,11 @@ const AboutUs = () => {
                     <div className="font-extrabold text-5xl uppercase sm:ps-0 ps-[3%] head-1">Meet the team</div>
                 </div>
 
-                <div className="py-5 bg-[#F7F7F7]">
+                <div className="py-5  bg-[#F7F7F7]">
                     <div className="md:grid grid-cols-2 gap-16 items-center md:px-0 px-[5%]">
                         <img src={ImageRakanTurki} alt="" className="h-full object-cover img-1" />
 
-                        <div className="md:mt-0 mt-5 text-1">
+                        <div className="md:mt-0 mt-5 text-1 p-[5%] xl:mr-20 lg:mr-20">
                             <div className="text-2xl md:text-3xl mb-3">Rakan Turki</div>
                             <p className="md:mb-10 mb-5 font-bold">CEO</p>
                             <p className="text-xs md:text-lg mb-5">Elite Group Holding Ltd, is more than just a group holding company. We are visionaries, innovators and creators of tomorrow’s possibilities.</p>
