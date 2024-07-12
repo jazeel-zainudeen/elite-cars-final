@@ -93,7 +93,7 @@ const CarouselSection = ({ images }) => {
 
   return (
     <div className="w-screen md:h-[80vh] relative flex flex-col-reverse md:block carouselSection">
-      <div className="md:absolute w-screen h-[50vh] md:h-[80vh] py-10">
+      <div className="md:absolute w-screen h-[50vh] md:h-[80vh] max-md:py-10">
         <Carousel
           showThumbs={false}
           showStatus={false}

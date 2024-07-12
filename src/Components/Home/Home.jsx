@@ -6,6 +6,7 @@ import VisibilitySensor from 'react-visibility-sensor';
 
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { ArrowLongRightIcon } from "@heroicons/react/24/outline";
+import { useMediaQuery } from 'react-responsive';
 
 import Brands from "./Brands";
 import Footer from "../Footer";
@@ -61,6 +62,7 @@ const Home = () => {
     video3,
     video2    // Add more video URLs here...
   ];
+  const isMdOrLarger = useMediaQuery({ minWidth: 768 });
 
   useEffect(() => {
     gsap.timeline({ duration: 0.5, ease: 'power3.out' })
@@ -161,6 +163,11 @@ const Home = () => {
       videoRef.current.play();
     }
   };
+
+  const clipPathStyle = isMdOrLarger
+    ? "polygon(0 0, 100% 0, 80% 100%, 0% 100%)"
+    : undefined;
+
   return (
     <>
       <Navbar />
@@ -211,7 +218,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="px-[5%] section-2  py-4">
+      {/* <div className="px-[5%] section-2  py-4">
         <div className="my-10 sm:flex sm:flex-row-reverse sm:items-center">
           <div className=" sm:shrink-1 sm:w-1/2">
             <div className="md:text-md text-[2rem]  lg:text-[2.5rem] font-semibold  text-[#282828]  mb-4 md:mb-8 text-1">ABOUT US</div>
@@ -237,24 +244,54 @@ const Home = () => {
             <img src={AboutImage} alt="" className="w-full h-full object-cover" />
           </div>
         </div>
+      </div> */}
+
+
+      <div className="section-2 max-md:py-4">
+        <div className="max-md:my-10 md:flex md:flex-row-reverse">
+          <div className=" md:shrink-1 md:w-1/2 px-[5%] md:pe-[5%] ps-[3%] md:py-10">
+            <div className="md:text-md text-[2rem]  lg:text-[2.5rem] font-semibold  text-[#282828]  mb-4 md:mb-8 text-1">ABOUT US</div>
+            <p className="mb-2 text-[#808080] text-base md:text-base lg:text-[1.25rem] lg:leading-[1.75rem]	 text-2 py-4">
+              At Elite Group Holding, we are committed to enhance the QUALITY OF LIFE within the communities we serve, continuously seek avenues for fostering growth and make a positive impact on the world and our community.
+            </p>
+            <p className="mb-2 text-[#808080] text-base md:text-base lg:text-[1.25rem] lg:leading-[1.75rem]	 text-2">
+              Headquartered in the United Arab Emirates, our expansive portfolio encompasses automotive, e-commerce, healthcare, real estate and contracting, and investments.
+            </p>
+            <p className="mb-2 text-[#808080] text-base lg:text-[1.25rem] lg:leading-[1.75rem]	 md:text-base  text-2">
+              We pride ourselves on our unwavering dedication to excellence, integrity, and teamwork.
+            </p>
+            <Link to="/about-group" >
+              <button href="/about-group" className="hidden md:block mt-9 bg-white hover:bg-[#fb511e] text-black hover:text-white  transition-all border border-1 border-black hover:border-[#fb511e] rounded-full px-10 py-3 button-1">
+                Read More
+                <ArrowLongRightIcon className="ms-4 inline w-6 h-6" />
+              </button>
+            </Link>
+          </div>
+          <div className="relative md:w-1/2 md:grow md:shrink-0 overflow-hidden img-1 max-md:px-[5%]">
+            <img src={AboutImage} alt="" className="w-full h-full object-cover" style={{
+              clipPath: clipPathStyle,
+              WebkitClipPath: clipPathStyle
+            }} />
+          </div>
+        </div>
       </div>
 
       <div className="px-[5%] md:text-md text-[2rem]  lg:text-[2.5rem]   text-[#282828] font-semibold md:mb-8 mb-4 section-3-head md:mt-20 py-4">EXPLORE OUR SECTORS</div>
       <CarouselSection images={CarouselImage2} />
 
       <div className=" px-[5%] md:py-0  section-4 bg-[#F7F7F7] md:pb-12  py-16">
-        <div className="md:grid md:grid-cols-3 flex flex-col md:items-center gap-5 md:gap-[5%] md:py-[5%] mb-4 ">
+        <div className="md:grid md:grid-cols-4 flex flex-col md:items-center gap-5 md:gap-[5%] md:py-[5%] mb-4 ">
           <div className="md:text-md text-[2rem]  lg:text-[2.5rem]   text-[#282828] font-semibold head-1  py-4">HIGHLIGHTS</div>
-          <div className="flex items-start flex-col md:flex-row md:col-span-2 gap-5 md:gap-10 ">
-            <p className="text-[#808080] text-base md:text-base lg:text-[1.25rem] lg:leading-[1.75rem]	 text-2 md:w-1/2">Trust and integrity are our core currencies, it is a foundation on how we build trust with our stakeholders and our partners.</p>
-            <p className="text-[#808080] text-base md:text-base lg:text-[1.25rem] lg:leading-[1.75rem]	 text-2 md:w-1/2">We hold ourselves to the highest ethical standards, ensuring transparency, honesty and accountability in everything we do.</p>
-            <p className="text-[#808080] text-base md:text-base lg:text-[1.25rem] lg:leading-[1.75rem]	 text-2 md:w-1/2">We believe in creating lasting value for our stakeholders. Our diversified portfolio, strategic vision, and operational excellence drive our success and ensure we remain a trusted partner in every sector we operate.</p>
+          <div className="flex items-start flex-col md:flex-row md:col-span-3 gap-5 md:gap-3 ">
+            <p className="text-[#808080] text-base md:text-base lg:text-[1.25rem] lg:leading-[1.75rem]	 text-2 md:w-1/2 line-clamp-5 hover:line-clamp-none">Trust and integrity are our core currencies, it is a foundation on how we build trust with our stakeholders and our partners.</p>
+            <p className="text-[#808080] text-base md:text-base lg:text-[1.25rem] lg:leading-[1.75rem]	 text-2 md:w-1/2 line-clamp-5 hover:line-clamp-none">We hold ourselves to the highest ethical standards, ensuring transparency, honesty and accountability in everything we do.</p>
+            <p className="text-[#808080] text-base md:text-base lg:text-[1.25rem] lg:leading-[1.75rem]	 text-2 md:w-1/2 line-clamp-5 hover:line-clamp-none">We believe in creating lasting value for our stakeholders. Our diversified portfolio, strategic vision, and operational excellence drive our success and ensure we remain a trusted partner in every sector we operate.</p>
           </div>
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-4 max-md:gap-5 mb-10 count">
           <div className="grid md:place-content-end place-content-center max-md:aspect-square md:text-right text-center gap-1 sm:gap-2 pt-2 md:pt-10 pb-5 md:px-10 px-2  md:border-l-2 border-[#808080] relative md:after:w-[80%] md:after:h-[1.6px] md:after:left-1/2 md:after:-translate-x-1/2 md:after:bg-[#808080] md:after:absolute md:after:-bottom-2">
-            <div className="text-5xl sm:text-7xl lg:text-7xl md:text-5xl font-bold">
+            <div className="text-5xl sm:text-7xl lg:text-6xl md:text-4xl font-bold">
               <CountUp end={30} redraw={true} delay={1}>
                 {({ countUpRef, start }) => (
                   <VisibilitySensor onChange={start} delayedCall>
@@ -265,7 +302,7 @@ const Home = () => {
             <div className="max-md:text-[#282828] text-xs md:text-sm">Years of experience</div>
           </div>
           <div className="grid md:place-content-end place-content-center max-md:aspect-square md:text-right text-center gap-1 sm:gap-2 pt-2 md:pt-10 pb-5 md:px-10 px-2  md:border-l-2 border-[#808080] relative md:after:w-[80%] md:after:h-[1.6px] md:after:left-1/2 md:after:-translate-x-1/2 md:after:bg-[#808080] md:after:absolute md:after:-bottom-2">
-            <div className="text-5xl sm:text-7xl lg:text-7xl  md:text-5xl font-bold">
+            <div className="text-5xl sm:text-7xl lg:text-6xl md:text-4xl font-bold">
               <CountUp end={5000} redraw={true} delay={1}>
                 {({ countUpRef, start }) => (
                   <VisibilitySensor onChange={start} delayedCall>
@@ -276,7 +313,7 @@ const Home = () => {
             <div className="max-md:text-[#282828] text-xs md:text-sm">Employers</div>
           </div>
           <div className="grid md:place-content-end place-content-center max-md:aspect-square md:text-right text-center gap-1 sm:gap-2 pt-2 md:pt-10 pb-5 md:px-10 px-2 max-md:border-y md:border-l-2 border-[#808080] relative md:after:w-[80%] md:after:h-[1.6px] md:after:left-1/2 md:after:-translate-x-1/2 md:after:bg-[#808080] md:after:absolute md:after:-bottom-2">
-            <div className="text-5xl sm:text-7xl lg:text-7xl md:text-5xl font-bold">
+            <div className="text-5xl sm:text-7xl lg:text-6xl md:text-4xl font-bold">
               <CountUp end={40} redraw={true} delay={1}>
                 {({ countUpRef, start }) => (
                   <VisibilitySensor onChange={start} delayedCall>
@@ -287,7 +324,7 @@ const Home = () => {
             <div className="max-md:text-[#282828] text-xs md:text-sm">Nationalities</div>
           </div>
           <div className="grid md:place-content-end place-content-center max-md:aspect-square md:text-right text-center gap-1 sm:gap-2 pt-2 md:pt-10 pb-5 md:px-10 px-2 max-md:border-y md:border-l-2 md:border-r-2 border-[#808080] relative md:after:w-[80%] md:after:h-[1.6px] md:after:left-1/2 md:after:-translate-x-1/2 md:after:bg-[#808080] md:after:absolute md:after:-bottom-2">
-            <div className="text-5xl sm:text-7xl lg:text-7xl md:text-5xl font-bold">
+            <div className="text-5xl sm:text-7xl lg:text-6xl md:text-4xl font-bold">
               <CountUp end={20} redraw={true} delay={1}>
                 {({ countUpRef, start }) => (
                   <VisibilitySensor onChange={start} delayedCall>
