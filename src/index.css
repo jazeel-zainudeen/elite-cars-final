@@ -93,3 +93,7 @@ body {
     padding-right: 20px;
   }
 }
+
+.pswp img {
+  object-fit: contain;
+}
