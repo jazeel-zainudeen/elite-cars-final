@@ -7,11 +7,16 @@ import gsap from 'gsap';
 const CarouselSection = ({ images }) => {
   const [currentImage, setCurrentImage] = useState(images[0]);
   const descriptionRefs = useRef([]);
+  const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 768);
 
   useEffect(() => {
-    const mediaQuery = gsap.matchMedia();
+    const handleResize = () => {
+      setIsDesktop(window.innerWidth >= 768);
+    };
 
-    mediaQuery.add("(min-width: 768px)", (e) => {
+    window.addEventListener('resize', handleResize);
+
+    if (isDesktop) {
       const handleMouseEnter = (index, image) => {
         gsap.to(descriptionRefs.current[index].children[0].children[0], {
           y: -25,
@@ -55,8 +60,12 @@ const CarouselSection = ({ images }) => {
           ref.removeEventListener('mouseleave', () => handleMouseLeave(index));
         });
       };
-    });
-  }, [images]);
+    }
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, [images, isDesktop]);
 
   const customRenderArrowPrev = (onClickHandler, hasPrev, label) =>
     hasPrev && (

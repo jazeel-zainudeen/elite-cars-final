@@ -121,7 +121,7 @@ const MediaCenter = () => {
                             <img src={Img1} alt="" className="md:w-1/2" />
                             <div className="md:w-1/2">
                                 <div className="font-normal text-[#404040] mb-4 md:mb-6">February 22, 2024, Dubai, UAE</div>
-                                <div className="font-bold text-2xl md:text-4xl mb-5 uppercase">The Elite Cars Presents Zenvo Aurora - Agil & Tur in the MENA</div>
+                                <div className="font-bold text-2xl md:text-4xl mb-5 uppercase line-clamp-2">The Elite Cars Presents Zenvo Aurora - Agil & Tur in the MENA</div>
                                 <div className="text-lg mb-5">The Elite Cars, the leading luxury automotive dealership in the United Arab Emirates, through their exclusive partnership with Zenvo Automotive, the renowned Danish supercar  </div>
 
                                 <button className="hover:bg-white text-white hover:text-black bg-black transition-all border border-1 border-white hover:border-black rounded-full px-10 py-3 button-1">
@@ -135,7 +135,7 @@ const MediaCenter = () => {
                             <img src={Img2} alt="" className="md:w-1/2" />
                             <div className="md:w-1/2">
                                 <div className="font-normal text-[#404040] mb-4 md:mb-6">February 22, 2024, Dubai, UAE</div>
-                                <div className="font-bold text-2xl md:text-4xl mb-5 uppercase">The All-New Jetour T2 Debuts in the UAE</div>
+                                <div className="font-bold text-2xl md:text-4xl mb-5 uppercase line-clamp-2">The All-New Jetour T2 Debuts in the UAE</div>
                                 <div className="text-lg mb-5">The Elite Cars, the leading luxury automotive dealership in the United Arab Emirates, through their exclusive partnership with Zenvo Automotive, the renowned Danish supercar</div>
 
                                 <button className="hover:bg-white text-white hover:text-black bg-black transition-all border border-1 border-white hover:border-black rounded-full px-10 py-3 button-1">
@@ -149,7 +149,7 @@ const MediaCenter = () => {
                             <img src={Img1} alt="" className="md:w-1/2" />
                             <div className="md:w-1/2">
                                 <div className="font-normal text-[#404040] mb-4 md:mb-6">February 22, 2024, Dubai, UAE</div>
-                                <div className="font-bold text-2xl md:text-4xl mb-5 uppercase">2023 Jetour Dashing Makes Its Debut in UAE Through The Elite Cars</div>
+                                <div className="font-bold text-2xl md:text-4xl mb-5 uppercase line-clamp-2">2023 Jetour Dashing Makes Its Debut in UAE Through The Elite Cars</div>
                                 <div className="text-lg mb-5">The Elite Cars, the leading luxury automotive dealership in the United Arab Emirates, through their exclusive partnership with Zenvo Automotive, the renowned Danish supercar  </div>
 
                                 <button className="hover:bg-white text-white hover:text-black bg-black transition-all border border-1 border-white hover:border-black rounded-full px-10 py-3 button-1">

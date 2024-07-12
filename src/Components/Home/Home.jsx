@@ -62,11 +62,6 @@ const Home = () => {
   ];
 
   useEffect(() => {
-    const mediaQuery = gsap.matchMedia();
-
-    mediaQuery.add("(min-width: 768px)", () => {
-    });
-
     gsap.timeline({ duration: 0.5, ease: 'power3.out' })
       .fromTo('.section-1 .text-1', { y: 50, opacity: 0 }, { y: 0, opacity: 1 })
       .fromTo('.section-1 .text-2', { y: 50, opacity: 0 }, { y: 0, opacity: 1 })
@@ -196,9 +191,9 @@ const Home = () => {
             </button>
           </div>
 
-          <div className="absolute bottom-[10%] w-screen grid grid-rows-1 grid-flow-col gap-[3%] px-[5%] overflow-x-auto whitespace-nowrap">
+          <div className="absolute bottom-[10%] w-screen flex flex-wrap gap-[3%] px-[5%] overflow-x-auto whitespace-nowrap">
             {["Our Company", "Automotive", "Investments", "Real-Estate", "Healthcare", "Education", "Ecommerce"].map((item, index) => (
-              <div key={index} onClick={() => handleVideoClick(index)} className={`cursor-pointer  ${currentVideo == index ? 'max-md:block' : 'max-md:hidden'}`}>
+              <div key={index} onClick={() => handleVideoClick(index)} className={`cursor-pointer lg:flex-1 ${currentVideo == index ? 'max-md:block' : 'max-md:hidden'}`}>
                 <div className="pb-1">
                   <div className="text-xl mb-2 text-[#d7dcd7]">{item}</div>
                   <div className="flex items-center justify-between  w-full">

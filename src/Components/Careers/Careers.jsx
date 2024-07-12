@@ -82,13 +82,15 @@ const Careers = () => {
             <div className="px-[5%]">
                 <div className="my-20 section-3">
                     <div className="text-3xl font-bold text-1">Why Choose The Elite Cars?</div>
-                    <ul className="list-disc mb-8 text-2">
-                        <li className="mt-5"><strong>Work with the best</strong>: Immerse yourself in the world of luxury car brands</li>
-                        <li className="mt-5"><strong>Make a difference</strong>: Contribute to the success of a company that is shaping the future of luxury automotive experiences in Dubai.</li>
-                        <li className="mt-5"><strong>Growth and development</strong>: We offer extensive training programs and mentorship opportunities to help you reach your full potential.</li>
-                        <li className="mt-5"><strong>Competitive benefits</strong>: Enjoy a comprehensive benefits package that includes competitive salary, healthcare, and paid time off.</li>
-                        <li className="mt-5"><strong>Empower Your Career</strong>: Be a part of a team that is passionate about what they do and is committed to providing exceptional customer service.</li>
-                    </ul>
+                    <div className="px-5">
+                        <ul className="list-disc mb-8 text-2">
+                            <li className="mt-5"><strong>Work with the best</strong>: Immerse yourself in the world of luxury car brands</li>
+                            <li className="mt-5"><strong>Make a difference</strong>: Contribute to the success of a company that is shaping the future of luxury automotive experiences in Dubai.</li>
+                            <li className="mt-5"><strong>Growth and development</strong>: We offer extensive training programs and mentorship opportunities to help you reach your full potential.</li>
+                            <li className="mt-5"><strong>Competitive benefits</strong>: Enjoy a comprehensive benefits package that includes competitive salary, healthcare, and paid time off.</li>
+                            <li className="mt-5"><strong>Empower Your Career</strong>: Be a part of a team that is passionate about what they do and is committed to providing exceptional customer service.</li>
+                        </ul>
+                    </div>
                     <button className="hover:bg-white text-white hover:text-black bg-black transition-all border border-1 border-white hover:border-black rounded-full px-10 py-3 button-1">
                         Explore
                         <ArrowLongRightIcon className="ms-4 inline w-6 h-6" />
