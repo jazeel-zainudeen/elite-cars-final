@@ -93,7 +93,7 @@ const CarouselSection = ({ images }) => {
 
   return (
     <div className="w-screen md:h-[80vh] relative flex flex-col-reverse md:block carouselSection">
-      <div className="md:absolute w-screen h-[50vh] md:h-[80vh]">
+      <div className="md:absolute w-screen h-[50vh] md:h-[80vh] py-10">
         <Carousel
           showThumbs={false}
           showStatus={false}
@@ -126,7 +126,7 @@ const CarouselSection = ({ images }) => {
 
       <div className="hidden md:grid-cols-6"></div>
       <div className="hidden md:grid-cols-5"></div>
-      <div className={`flex justify-evenly gap-3 px-5 md:px-0 mb-5 md:mb-5 md:gap-0 flex-wrap md:grid md:grid-cols-${images.length} md:h-full`}>
+      <div className={`flex  justify-evenly gap-3 px-5 md:px-0 mb-5 md:mb-5 md:gap-0 flex-wrap md:grid md:grid-cols-${images.length} md:h-full`}>
         {images.map((image, index) => (
           <a href={image.url}
             key={index}

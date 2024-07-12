@@ -231,13 +231,6 @@ const Home = () => {
                 <ArrowLongRightIcon className="ms-4 inline w-6 h-6" />
               </button>
             </Link>
-            {/* <a
-                            
-                            className={`hidden md:block  bg-white hover:bg-[#fb511e] text-black hover:text-white transition-all border border-1 border-black hover:border-[#fb511e] rounded-full px-10 py-3 button-1 font-light mb-2 md:mb-8 `}
-                        >
-                            Read More
-                            <ArrowLongRightIcon className="ms-4 inline w-6 h-6" />
-                        </a> */}
           </div>
           <div className="relative sm:w-1/2 sm:grow sm:shrink-0 sm:-mt-[6%] sm:-ms-[5.75%] overflow-hidden img-1  py-4">
             <div className="hidden sm:block absolute bg-white w-1/4 h-[120%] rotate-12 -right-[11%]"></div>
@@ -246,16 +239,16 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="px-[5%] text-xl sm:text-4xl lg:text-[2.5rem] font-semibold md:mb-8 mb-4 section-3-head md:mt-20 py-4">EXPLORE OUR SECTORS</div>
+      <div className="px-[5%] md:text-md text-[2rem]  lg:text-[2.5rem]   text-[#282828] font-semibold md:mb-8 mb-4 section-3-head md:mt-20 py-4">EXPLORE OUR SECTORS</div>
       <CarouselSection images={CarouselImage2} />
 
-      <div className=" px-[5%] md:py-0 py-10 section-4 bg-[#F7F7F7] md:pb-12 pb-4">
+      <div className=" px-[5%] md:py-0  section-4 bg-[#F7F7F7] md:pb-12  py-16">
         <div className="md:grid md:grid-cols-3 flex flex-col md:items-center gap-5 md:gap-[5%] md:py-[5%] mb-4 ">
-          <div className="text-xl sm:text-4xl lg:text-[2.5rem] font-semibold head-1 text-[#282828]">HIGHLIGHTS</div>
-          <div className="flex items-start flex-col md:flex-row md:col-span-2 gap-5 md:gap-10">
-            <p className="font-light text-[#808080] text-base md:text-base lg:text-[1.25rem] lg:leading-[1.75rem] text md:w-1/2">Trust and integrity are our core currencies, it is a foundation on how we build trust with our stakeholders and our partners.</p>
-            <p className="font-light text-[#808080] text-base md:text-base lg:text-[1.25rem] lg:leading-[1.75rem] text md:w-1/2">We hold ourselves to the highest ethical standards, ensuring transparency, honesty and accountability in everything we do.</p>
-            <p className="font-light text-[#808080] text-base md:text-base lg:text-[1.25rem] lg:leading-[1.75rem] text md:w-1/2">We believe in creating lasting value for our stakeholders. Our diversified portfolio, strategic vision, and operational excellence drive our success and ensure we remain a trusted partner in every sector we operate.</p>
+          <div className="md:text-md text-[2rem]  lg:text-[2.5rem]   text-[#282828] font-semibold head-1  py-4">HIGHLIGHTS</div>
+          <div className="flex items-start flex-col md:flex-row md:col-span-2 gap-5 md:gap-10 ">
+            <p className="text-[#808080] text-base md:text-base lg:text-[1.25rem] lg:leading-[1.75rem]	 text-2 md:w-1/2">Trust and integrity are our core currencies, it is a foundation on how we build trust with our stakeholders and our partners.</p>
+            <p className="text-[#808080] text-base md:text-base lg:text-[1.25rem] lg:leading-[1.75rem]	 text-2 md:w-1/2">We hold ourselves to the highest ethical standards, ensuring transparency, honesty and accountability in everything we do.</p>
+            <p className="text-[#808080] text-base md:text-base lg:text-[1.25rem] lg:leading-[1.75rem]	 text-2 md:w-1/2">We believe in creating lasting value for our stakeholders. Our diversified portfolio, strategic vision, and operational excellence drive our success and ensure we remain a trusted partner in every sector we operate.</p>
           </div>
         </div>
 
