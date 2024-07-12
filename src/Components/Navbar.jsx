@@ -22,10 +22,10 @@ const Navbar = () => {
 
   return (
     <>
+      <div className='fixed z-50 w-screen bg-black/10'>
       <div className="absolute top-0 md:left-1/2 left-[5%] md:-translate-x-1/2 z-[60] py-[5%] md:py-4">
         <a href="/" className=''><img src={Logo} className='w-28 md:w-32' /></a>
       </div>
-      <div className='fixed z-50 w-screen'>
         <div className="flex justify-between px-[4.5%] md:px-[2.5%] py-[5%] md:py-4 bg-[linear-gradient(rgba(15,15,15,0.9),rgba(0,0,0,0))]">
           <SocialLinks className='gap-0.5 hidden md:flex items-center' iconClassName='!w-11 !h-11 socialIconCustomColor' />
           <div className='flex md:items-center gap-8 max-md:justify-end max-md:w-full'>

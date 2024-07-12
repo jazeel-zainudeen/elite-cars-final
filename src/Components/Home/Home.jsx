@@ -250,8 +250,8 @@ const Home = () => {
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-4 max-md:gap-5 mb-10 count">
-          <div className="grid md:place-content-end place-content-center max-md:aspect-square md:text-right text-center gap-1 sm:gap-2 pt-2 md:pt-10 pb-5 md:px-10 px-2 max-md:border-y md:border-l-2 border-[#808080] relative md:after:w-[80%] md:after:h-[1.6px] md:after:left-1/2 md:after:-translate-x-1/2 md:after:bg-[#808080] md:after:absolute md:after:-bottom-2">
-            <div className="text-5xl sm:text-7xl lg:text-7xl font-bold">
+          <div className="grid md:place-content-end place-content-center max-md:aspect-square md:text-right text-center gap-1 sm:gap-2 pt-2 md:pt-10 pb-5 md:px-10 px-2  md:border-l-2 border-[#808080] relative md:after:w-[80%] md:after:h-[1.6px] md:after:left-1/2 md:after:-translate-x-1/2 md:after:bg-[#808080] md:after:absolute md:after:-bottom-2">
+            <div className="text-5xl sm:text-7xl lg:text-7xl md:text-5xl font-bold">
               <CountUp end={30} redraw={true} delay={1}>
                 {({ countUpRef, start }) => (
                   <VisibilitySensor onChange={start} delayedCall>
@@ -261,8 +261,8 @@ const Home = () => {
               </CountUp>+</div>
             <div className="max-md:text-[#282828] text-xs md:text-sm">Years of experience</div>
           </div>
-          <div className="grid md:place-content-end place-content-center max-md:aspect-square md:text-right text-center gap-1 sm:gap-2 pt-2 md:pt-10 pb-5 md:px-10 px-2 max-md:border-y md:border-l-2 border-[#808080] relative md:after:w-[80%] md:after:h-[1.6px] md:after:left-1/2 md:after:-translate-x-1/2 md:after:bg-[#808080] md:after:absolute md:after:-bottom-2">
-            <div className="text-5xl sm:text-7xl lg:text-7xl font-bold">
+          <div className="grid md:place-content-end place-content-center max-md:aspect-square md:text-right text-center gap-1 sm:gap-2 pt-2 md:pt-10 pb-5 md:px-10 px-2  md:border-l-2 border-[#808080] relative md:after:w-[80%] md:after:h-[1.6px] md:after:left-1/2 md:after:-translate-x-1/2 md:after:bg-[#808080] md:after:absolute md:after:-bottom-2">
+            <div className="text-5xl sm:text-7xl lg:text-7xl  md:text-5xl font-bold">
               <CountUp end={5000} redraw={true} delay={1}>
                 {({ countUpRef, start }) => (
                   <VisibilitySensor onChange={start} delayedCall>
@@ -273,7 +273,7 @@ const Home = () => {
             <div className="max-md:text-[#282828] text-xs md:text-sm">Employers</div>
           </div>
           <div className="grid md:place-content-end place-content-center max-md:aspect-square md:text-right text-center gap-1 sm:gap-2 pt-2 md:pt-10 pb-5 md:px-10 px-2 max-md:border-y md:border-l-2 border-[#808080] relative md:after:w-[80%] md:after:h-[1.6px] md:after:left-1/2 md:after:-translate-x-1/2 md:after:bg-[#808080] md:after:absolute md:after:-bottom-2">
-            <div className="text-5xl sm:text-7xl lg:text-7xl font-bold">
+            <div className="text-5xl sm:text-7xl lg:text-7xl md:text-5xl font-bold">
               <CountUp end={40} redraw={true} delay={1}>
                 {({ countUpRef, start }) => (
                   <VisibilitySensor onChange={start} delayedCall>
@@ -284,7 +284,7 @@ const Home = () => {
             <div className="max-md:text-[#282828] text-xs md:text-sm">Nationalities</div>
           </div>
           <div className="grid md:place-content-end place-content-center max-md:aspect-square md:text-right text-center gap-1 sm:gap-2 pt-2 md:pt-10 pb-5 md:px-10 px-2 max-md:border-y md:border-l-2 md:border-r-2 border-[#808080] relative md:after:w-[80%] md:after:h-[1.6px] md:after:left-1/2 md:after:-translate-x-1/2 md:after:bg-[#808080] md:after:absolute md:after:-bottom-2">
-            <div className="text-5xl sm:text-7xl lg:text-7xl font-bold">
+            <div className="text-5xl sm:text-7xl lg:text-7xl md:text-5xl font-bold">
               <CountUp end={20} redraw={true} delay={1}>
                 {({ countUpRef, start }) => (
                   <VisibilitySensor onChange={start} delayedCall>
