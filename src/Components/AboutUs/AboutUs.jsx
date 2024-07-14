@@ -211,12 +211,12 @@ const AboutUs = () => {
                 </div>
             </div>
 
-            <div className="relative w-screen h-[75vh] section-6">
-                <img src={BackgroundImage2} className="object-cover object-center w-full h-full brightness-50" />
-                <div className="absolute top-1/2 left-0 px-[5%] -translate-y-1/2 z-10 text-white">
-                    <img src={Logo} className="w-56 mb-5 logo-1" />
+            <div className="relative w-screen h-screen section-6 grid">
+                <img src={BackgroundImage2} className="absolute object-cover object-center w-full h-full brightness-50" />
+                <div className="px-[5%] z-10 text-white place-content-center">
+                    <img src={Logo} className="w-36 md:w-56 mb-5 logo-1" />
                     <div className="text-xl md:text-2xl font-medium mb-3 uppercase text-1">CORPORATE SOCIAL RESPONSIBILITY</div>
-                    <div className="text-md md:text-lg font-medium md:w-1/2 text-[#B3B3B3] text-2">Enriching Communities program was launched in 2018, to affirm the Group’s commitment to CSR and helping local and international communities. CSR is embedded in the organization’s culture, as we continue to launch initiatives to support the UAE leadership’s vision and contribute to the economic development while improving the quality of life of our society, customers, partners, and employees.</div>
+                    <div className="text-md md:text-lg font-medium lg:w-1/2 text-[#B3B3B3] text-2">Enriching Communities program was launched in 2018, to affirm the Group’s commitment to CSR and helping local and international communities. CSR is embedded in the organization’s culture, as we continue to launch initiatives to support the UAE leadership’s vision and contribute to the economic development while improving the quality of life of our society, customers, partners, and employees.</div>
                 </div>
             </div>
 

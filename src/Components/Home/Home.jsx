@@ -249,7 +249,7 @@ const Home = () => {
 
       <div className="section-2 max-md:py-4">
         <div className="max-md:my-10 md:flex md:flex-row-reverse">
-          <div className=" md:shrink-1 md:w-1/2 px-[5%] md:pe-[5%] ps-[3%] md:py-10">
+          <div className=" md:shrink-1 md:w-1/2 px-[5%] md:py-10">
             <div className="md:text-md text-[2rem]  lg:text-[2.5rem] font-semibold  text-[#282828]  mb-4 md:mb-8 text-1">ABOUT US</div>
             <p className="mb-2 text-[#808080] text-base md:text-base lg:text-[1.25rem] lg:leading-[1.75rem]	 text-2 py-4">
               At Elite Group Holding, we are committed to enhance the QUALITY OF LIFE within the communities we serve, continuously seek avenues for fostering growth and make a positive impact on the world and our community.
@@ -261,7 +261,7 @@ const Home = () => {
               We pride ourselves on our unwavering dedication to excellence, integrity, and teamwork.
             </p>
             <Link to="/about-group" >
-              <button href="/about-group" className="hidden md:block mt-9 bg-white hover:bg-[#fb511e] text-black hover:text-white  transition-all border border-1 border-black hover:border-[#fb511e] rounded-full px-10 py-3 button-1">
+              <button href="/about-group" className="block md:mt-9 max-md:mt-3 max-md:mb-5 bg-white hover:bg-[#fb511e] text-black hover:text-white  transition-all border border-1 border-black hover:border-[#fb511e] rounded-full px-10 py-1 md:py-3 button-1">
                 Read More
                 <ArrowLongRightIcon className="ms-4 inline w-6 h-6" />
               </button>

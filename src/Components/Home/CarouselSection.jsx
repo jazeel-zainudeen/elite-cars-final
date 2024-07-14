@@ -46,8 +46,8 @@ const CarouselSection = ({ images }) => {
     );
 
   return (
-    <div className="w-screen md:h-[80vh] relative flex flex-col-reverse md:block carouselSection">
-      <div className="md:absolute w-screen h-[50vh] md:h-[80vh] max-md:py-10">
+    <div className="w-screen md:h-[80vh] relative flex flex-col-reverse md:block carouselSection max-md:py-1">
+      <div className="md:absolute w-screen h-[50vh] md:h-[80vh]0">
         <Carousel
           showThumbs={false}
           showStatus={false}
@@ -89,7 +89,7 @@ const CarouselSection = ({ images }) => {
             onMouseEnter={() => setCurrentImage(image)}
             ref={(el) => (descriptionRefs.current[index] = el)}
           >
-            <div className="md:absolute md:w-full bottom-0 transition-all duration-300 ease-in-out transform mb-6">
+            <div className="md:absolute md:w-full bottom-0 transition-all duration-300 ease-in-out transform md:mb-6">
               <div className={`select-none text-center text-xs md:text-lg lg:text-2xl transition-all text-black md:text-white max-md:group-hover:text-white`}>
                 {image.name}
               </div>
