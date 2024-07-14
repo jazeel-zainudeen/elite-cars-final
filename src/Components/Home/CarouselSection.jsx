@@ -2,70 +2,24 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { ArrowLongLeftIcon, ArrowLongRightIcon } from '@heroicons/react/24/outline';
-import gsap from 'gsap';
+import { gsap } from 'gsap';
 
 const CarouselSection = ({ images }) => {
   const [currentImage, setCurrentImage] = useState(images[0]);
   const descriptionRefs = useRef([]);
-  const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 768);
 
   useEffect(() => {
-    const handleResize = () => {
-      setIsDesktop(window.innerWidth >= 768);
-    };
-
-    window.addEventListener('resize', handleResize);
-
-    if (isDesktop) {
-      const handleMouseEnter = (index, image) => {
-        gsap.to(descriptionRefs.current[index].children[0].children[0], {
-          y: -25,
-          duration: 0.3,
-          ease: 'none',
+    descriptionRefs.current.forEach((ref) => {
+      if (ref) {
+        ref.addEventListener('mouseenter', () => {
+          gsap.to(ref.querySelector('.description'), { height: 'auto', marginTop: '0.5rem', duration: 0.75, ease: 'power1.inOut' });
         });
-        gsap.to(descriptionRefs.current[index].children[0].children[1], {
-          y: -20,
-          opacity: 1,
-          duration: 0.3,
-          ease: 'none',
+        ref.addEventListener('mouseleave', () => {
+          gsap.to(ref.querySelector('.description'), { height: 0, marginTop: 0, duration: 0.75, ease: 'power1.inOut' });
         });
-      };
-
-      const handleMouseLeave = (index) => {
-        gsap.killTweensOf(descriptionRefs.current[index].children[0]);
-        gsap.killTweensOf(descriptionRefs.current[index].children[1]);
-
-        gsap.timeline()
-          .to(descriptionRefs.current[index].children[0].children[1], {
-            y: 0,
-            opacity: 0,
-            duration: 0.3,
-            ease: 'none',
-          })
-          .to(descriptionRefs.current[index].children[0].children[0], {
-            y: 0,
-            duration: 0.3,
-            ease: 'none',
-          });
-      };
-
-      descriptionRefs.current.forEach((ref, index) => {
-        ref.addEventListener('mouseenter', () => handleMouseEnter(index, images[index]));
-        ref.addEventListener('mouseleave', () => handleMouseLeave(index));
-      });
-
-      return () => {
-        descriptionRefs.current.forEach((ref, index) => {
-          ref.removeEventListener('mouseenter', () => handleMouseEnter(index, images[index]));
-          ref.removeEventListener('mouseleave', () => handleMouseLeave(index));
-        });
-      };
-    }
-
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, [images, isDesktop]);
+      }
+    });
+  }, [images]);
 
   const customRenderArrowPrev = (onClickHandler, hasPrev, label) =>
     hasPrev && (
@@ -126,19 +80,20 @@ const CarouselSection = ({ images }) => {
 
       <div className="hidden md:grid-cols-6"></div>
       <div className="hidden md:grid-cols-5"></div>
-      <div className={`flex  justify-evenly gap-3 px-5 md:px-0 mb-5 md:mb-5 md:gap-0 flex-wrap md:grid md:grid-cols-${images.length} md:h-full`}>
+      <div className={`flex justify-evenly gap-3 px-5 md:px-0 mb-5 md:mb-5 md:gap-0 flex-wrap md:grid md:grid-cols-${images.length} md:h-full`}>
         {images.map((image, index) => (
-          <a href={image.url}
+          <a
+            href={image.url}
             key={index}
             className={`relative border md:rounded-none rounded-full px-5 md:px-0 py-1 md:py-0 flex-auto md:border-r border-black md:border-[#808080] group transition-all max-md:hover:bg-black`}
             onMouseEnter={() => setCurrentImage(image)}
             ref={(el) => (descriptionRefs.current[index] = el)}
           >
-            <div className="md:absolute md:w-full top-[65%] transition-all duration-300 ease-in-out transform">
-              <div className={`select-none text-center text-xs md:text-xl lg:text-2xl transition-all text-black md:text-white max-md:group-hover:text-white`}>
+            <div className="md:absolute md:w-full bottom-0 transition-all duration-300 ease-in-out transform mb-6">
+              <div className={`select-none text-center text-xs md:text-lg lg:text-2xl transition-all text-black md:text-white max-md:group-hover:text-white`}>
                 {image.name}
               </div>
-              <div className={`max-md:hidden text-center text-xs md:px-3 md:text-sm text-black md:text-[#DFDCDC] overflow-hidden opacity-0 md:group-hover:opacity-100 transition-all duration-700 cursor-pointer`}>
+              <div className={`h-0 description max-md:hidden text-center md:text-lg text-xs md:px-3 text-black md:text-[#DFDCDC] overflow-hidden cursor-pointer`}>
                 {image.description}
               </div>
             </div>
