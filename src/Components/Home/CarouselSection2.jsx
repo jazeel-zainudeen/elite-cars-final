@@ -50,7 +50,7 @@ const CarouselSection2 = ({ images }) => {
                             <div className="text-[#282828] text-sm font-light">{images[0].description}</div>
                         </div>
 
-                        <a href={images[0].url} className="block hover:bg-[#fb511e] hover:text-white transition-all border border-1 border-black hover:border-[#fb511e] rounded-full px-10 py-3 button-1">
+                        <a href={images[0].url} className="block hover:bg-[#fb511e] hover:text-white transition-all border border-1 border-black hover:border-[#fb511e] rounded-full px-10 py-1 md:py-3 button-1">
                             READ MORE
                             <ArrowLongRightIcon className="ms-4 inline w-6 h-6" />
                         </a>
@@ -76,7 +76,7 @@ const CarouselSection2 = ({ images }) => {
                             <div className="text-sm text-[#282828] font-semibold">{image.created_at}</div>
                             <div className="text-md md:text-2xl font-semibold uppercase line-clamp-2 hover:line-clamp-none md:leading-8 md:h-16 md:hover:h-auto transition-all">{image.title}</div>
                             <div className="text-sm font-light text-[#282828]">{image.description}</div>
-                            <a href={image.url} className="block hover:bg-[#fb511e] hover:text-white transition-all border border-1 border-[#282828] hover:border-[#fb511e] rounded-full px-10 py-3 button-1">
+                            <a href={image.url} className="block hover:bg-[#fb511e] hover:text-white transition-all border border-1 border-[#282828] hover:border-[#fb511e] rounded-full px-10 py-1 md:py-3 button-1">
                                 READ MORE
                                 <ArrowLongRightIcon className="ms-4 inline w-6 h-6" />
                             </a>
